@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500">
+  <title>Ciencia De Dados</title>
+  <style rel="stylesheet" crossorigin="">
+    @import url("https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;600;700");
+    @import url("https://api.fontshare.com/css?f[]=sarpanch@400,600,700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto Condensed:wght@400;500");
+    @import url("https://api.fontshare.com/css?f[]=roboto condensed@400,500&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto Serif:wght@400;500");
+    @import url("https://api.fontshare.com/css?f[]=roboto serif@400,500&display=swap");
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e5e7eb;
+    }
+
+    ::before,
+    ::after {
+      --tw-content: "";
+    }
+
+
+    html,
+    :host {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+      tab-size: 4;
+      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: transparent;
+      zoom: 90%;
+    }
+
+
+    body {
+      margin: 0;
+      line-height: inherit;
+    }
+
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px;
+    }
+
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+
+    code,
+    kbd,
+    samp,
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      font-size: 1em;
+    }
+
+
+    small {
+      font-size: 80%;
+    }
+
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse;
+    }
+
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      font-size: 100%;
+      font-weight: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+
+    button,
+    input:where([type="button"]),
+    input:where([type="reset"]),
+    input:where([type="submit"]) {
+      -webkit-appearance: button;
+      background-color: transparent;
+      background-image: none;
+    }
+
+
+    :-moz-focusring {
+      outline: auto;
+    }
+
+
+    :-moz-ui-invalid {
+      box-shadow: none;
+    }
+
+
+    progress {
+      vertical-align: baseline;
+    }
+
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+
+    [type="search"] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px;
+    }
+
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+
+
+    summary {
+      display: list-item;
+    }
+
+
+    blockquote,
+    dl,
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    figure,
+    p,
+    pre {
+      margin: 0;
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0;
+    }
+
+    legend {
+      padding: 0;
+    }
+
+    ol,
+    ul,
+    menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    dialog {
+      padding: 0;
+    }
+
+
+    textarea {
+      resize: vertical;
+    }
+
+
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 1;
+      color: #9ca3af;
+    }
+
+
+    button,
+    [role="button"] {
+      cursor: pointer;
+    }
+
+    :disabled {
+      cursor: default;
+    }
+
+
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+      display: block;
+      vertical-align: middle;
+    }
+
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+
+
+
+
+
+    p,
+    ol,
+    ul {
+      margin: 0px;
+    }
+
+    button {
+      padding: 0px;
+    }
+
+    ol,
+    ul {
+      padding-inline-start: 1.5em;
+    }
+
+    input {
+      background-image: none;
+      background-color: transparent;
+    }
+
+    .common-4,
+    .cincia-de-dados-t-ci-ncia-de-dados,
+    .cincia-de-dados-rectangle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .common-5,
+    .cincia-de-dados-tt-principais-reas-de-estudo-testat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc-perfil,
+    .cincia-de-dados-to-engenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-oreas-de-atua-o {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .common-6,
+    .cincia-de-dados-tt-introdu-otocurso-de-ci-ncia-de-dados-uma-rea-emergente-que-combina-conhecimentos-de-estat-stica-matem-tica-computa-oeconhecimento-de-dom-nio-para-extrair-insights-evalor-de-grandes-ecomplexos-conjuntos-de-dados-oobjetivo-formar-profissionais-capazes-de-coletar-processar-analisar-einterpretar-dados-utilizando-tcnicas-de-modelagem-estat-stica-eaprendizado-de-mquina-para-apoiar-atomada-de-decis-es-edescobrir-padr-es,
+    .cincia-de-dados-tttt-principais-reas-de-estudo-testat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc-perfil-ttoengenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-oreas-de-atua-oengenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .common-7,
+    .cincia-de-dados-ttt-principais-reas-de-estudo-testat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc-perfil-ttoengenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-oreas-de-atua-oengenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops,
+    .cincia-de-dados-t-principais-reas-de-estudo-testat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc,
+    .cincia-de-dados-tto-engenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-oreas-de-atua-oengenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .common-8,
+    .cincia-de-dados-t-pagina-inicial-sum-rio-tsobre,
+    .cincia-de-dados-o-curso-de-ci-ncia-de-dados-uma-rea-emergente-que-combina-conhecimentos-de-estat-stica-matem-tica-computa-oeconhecimento-de-dom-nio-para-extrair-insights-evalor-de-grandes-ecomplexos-conjuntos-de-dados-oobjetivo-formar-profissionais-capazes-de-coletar-processar-analisar-einterpretar-dados-utilizando-tcnicas-de-modelagem-estat-stica-eaprendizado-de-mquina-para-apoiar-atomada-de-decis-es-edescobrir-padr-es,
+    .cincia-de-dados-estat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc {
+      display: flex;
+      align-items: center;
+    }
+
+    .common-9,
+    .cincia-de-dados-o-engenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-o,
+    .cincia-de-dados-engenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .common-2,
+    .cincia-de-dados-ci-ncia-de-dados-1,
+    .cincia-de-dados-introdu-o {
+      font-size: 120px;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      font-weight: 700;
+    }
+
+    .common-3,
+    .cincia-de-dados-principais-reas-de-estudo,
+    .cincia-de-dados-perfil,
+    .cincia-de-dados-reas-de-atua-o {
+      font-size: 64px;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      font-weight: 600;
+    }
+
+    .common-1,
+    .cincia-de-dados-wrapper,
+    .cincia-de-dados-ci-ncia-de-dados {
+      display: flex;
+      width: 100%;
+    }
+
+    .cincia-de-dados-wrapper {
+      align-items: flex-start;
+      line-height: normal;
+    }
+
+    .cincia-de-dados-ci-ncia-de-dados {
+      overflow: clip;
+      align-items: center;
+      background-color: dodgerblue;
+      flex-direction: column;
+      padding-bottom: 155px;
+      height: 100%;
+      font-family: "Roboto Condensed", ui-sans-serif, system-ui, sans-serif;
+      font-size: 50px;
+      font-weight: 500;
+    }
+
+    .cincia-de-dados-t-ci-ncia-de-dados {
+      width: 1510px;
+      padding-top: 253px;
+    }
+
+    .cincia-de-dados-ci-ncia-de-dados-1 {
+      text-align: center;
+    }
+
+    .cincia-de-dados-t-rectangle {
+      align-self: stretch;
+      height: 0px;
+    }
+
+    .cincia-de-dados-rectangle {
+      margin-top: -421px;
+      background-color: darkslateblue;
+      height: 162px;
+      padding-bottom: 40px;
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 40px;
+    }
+
+    .cincia-de-dados-tt-pagina-inicial-sum-rio-tsobre {
+      align-items: flex-end;
+      padding-right: 199px;
+      padding-top: 12px;
+      display: flex;
+    }
+
+    .cincia-de-dados-t-pagina-inicial-sum-rio-tsobre {
+      row-gap: 35px;
+      column-gap: 48px;
+      flex-grow: 1;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      color: white;
+    }
+
+    .cincia-de-dados-sobre {
+      padding-left: 115px;
+    }
+
+    .cincia-de-dados-tt-introdu-otocurso-de-ci-ncia-de-dados-uma-rea-emergente-que-combina-conhecimentos-de-estat-stica-matem-tica-computa-oeconhecimento-de-dom-nio-para-extrair-insights-evalor-de-grandes-ecomplexos-conjuntos-de-dados-oobjetivo-formar-profissionais-capazes-de-coletar-processar-analisar-einterpretar-dados-utilizando-tcnicas-de-modelagem-estat-stica-eaprendizado-de-mquina-para-apoiar-atomada-de-decis-es-edescobrir-padr-es {
+      align-self: stretch;
+      padding-left: 38px;
+      padding-right: 67px;
+      padding-top: 3px;
+    }
+
+    .cincia-de-dados-t-introdu-otocurso-de-ci-ncia-de-dados-uma-rea-emergente-que-combina-conhecimentos-de-estat-stica-matem-tica-computa-oeconhecimento-de-dom-nio-para-extrair-insights-evalor-de-grandes-ecomplexos-conjuntos-de-dados-oobjetivo-formar-profissionais-capazes-de-coletar-processar-analisar-einterpretar-dados-utilizando-tcnicas-de-modelagem-estat-stica-eaprendizado-de-mquina-para-apoiar-atomada-de-decis-es-edescobrir-padr-es {
+      flex-grow: 1;
+    }
+
+    .cincia-de-dados-introdu-o {
+      width: 860px;
+    }
+
+    .cincia-de-dados-to-curso-de-ci-ncia-de-dados-uma-rea-emergente-que-combina-conhecimentos-de-estat-stica-matem-tica-computa-oeconhecimento-de-dom-nio-para-extrair-insights-evalor-de-grandes-ecomplexos-conjuntos-de-dados-oobjetivo-formar-profissionais-capazes-de-coletar-processar-analisar-einterpretar-dados-utilizando-tcnicas-de-modelagem-estat-stica-eaprendizado-de-mquina-para-apoiar-atomada-de-decis-es-edescobrir-padr-es {
+      height: 560px;
+    }
+
+    .cincia-de-dados-o-curso-de-ci-ncia-de-dados-uma-rea-emergente-que-combina-conhecimentos-de-estat-stica-matem-tica-computa-oeconhecimento-de-dom-nio-para-extrair-insights-evalor-de-grandes-ecomplexos-conjuntos-de-dados-oobjetivo-formar-profissionais-capazes-de-coletar-processar-analisar-einterpretar-dados-utilizando-tcnicas-de-modelagem-estat-stica-eaprendizado-de-mquina-para-apoiar-atomada-de-decis-es-edescobrir-padr-es {
+      margin-bottom: -30px;
+      height: 590px;
+    }
+
+    .cincia-de-dados-text {
+      font-size: 96px;
+    }
+
+    .cincia-de-dados-tttt-principais-reas-de-estudo-testat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc-perfil-ttoengenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-oreas-de-atua-oengenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops {
+      align-self: stretch;
+      padding-left: 38px;
+      padding-right: 67px;
+      padding-top: 6px;
+    }
+
+    .cincia-de-dados-ttt-principais-reas-de-estudo-testat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc-perfil-ttoengenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-oreas-de-atua-oengenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops {
+      flex-grow: 1;
+      gap: 51px;
+    }
+
+    .cincia-de-dados-tt-principais-reas-de-estudo-testat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc-perfil {
+      gap: 46px;
+    }
+
+    .cincia-de-dados-t-principais-reas-de-estudo-testat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc {
+      align-self: stretch;
+    }
+
+    .cincia-de-dados-t-estat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc {
+      height: 795px;
+    }
+
+    .cincia-de-dados-estat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc {
+      margin-bottom: -54px;
+      height: 849px;
+    }
+
+    .cincia-de-dados-spacer {
+      height: 60px;
+    }
+
+    .cincia-de-dados-list {
+      list-style-type: disc;
+    }
+
+    .cincia-de-dados-tto-engenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-oreas-de-atua-oengenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops {
+      gap: 52px;
+    }
+
+    .cincia-de-dados-o-engenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-o {
+      align-self: stretch;
+      height: 364px;
+    }
+
+    .cincia-de-dados-engenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops {
+      font-family: "Roboto Serif", ui-sans-serif, system-ui, sans-serif;
+    }
+
+    @media (min-width: 1500px) {
+      .cincia-de-dados-t-pagina-inicial-sum-rio-tsobre {
+        flex-wrap: nowrap;
+      }
+    }
+  </style>
+  <style>
+    html {
+      scrollbar-gutter: stable;
+    }
+  </style>
+</head>
+
+<body style="margin: 0px">
+    <div class="cincia-de-dados-wrapper">
+      <div class="cincia-de-dados-ci-ncia-de-dados">
+        <div class="cincia-de-dados-t-ci-ncia-de-dados">
+          <div class="cincia-de-dados-ci-ncia-de-dados-1">
+            Ciência de Dados
+          </div>
+        </div>
+        <div class="cincia-de-dados-t-rectangle">
+          <div class="cincia-de-dados-rectangle">
+            <div class="cincia-de-dados-tt-pagina-inicial-sum-rio-tsobre">
+              <div class="cincia-de-dados-t-pagina-inicial-sum-rio-tsobre">
+                <div><a href="../main.html">Pagina Inicial</a></div>
+                <div><a href="../sumario.html">Sumário</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="cincia-de-dados-tt-introdu-otocurso-de-ci-ncia-de-dados-uma-rea-emergente-que-combina-conhecimentos-de-estat-stica-matem-tica-computa-oeconhecimento-de-dom-nio-para-extrair-insights-evalor-de-grandes-ecomplexos-conjuntos-de-dados-oobjetivo-formar-profissionais-capazes-de-coletar-processar-analisar-einterpretar-dados-utilizando-tcnicas-de-modelagem-estat-stica-eaprendizado-de-mquina-para-apoiar-atomada-de-decis-es-edescobrir-padr-es">
+          <div
+            class="cincia-de-dados-t-introdu-otocurso-de-ci-ncia-de-dados-uma-rea-emergente-que-combina-conhecimentos-de-estat-stica-matem-tica-computa-oeconhecimento-de-dom-nio-para-extrair-insights-evalor-de-grandes-ecomplexos-conjuntos-de-dados-oobjetivo-formar-profissionais-capazes-de-coletar-processar-analisar-einterpretar-dados-utilizando-tcnicas-de-modelagem-estat-stica-eaprendizado-de-mquina-para-apoiar-atomada-de-decis-es-edescobrir-padr-es">
+            <div class="cincia-de-dados-introdu-o">Introdução:</div>
+            <div
+              class="cincia-de-dados-to-curso-de-ci-ncia-de-dados-uma-rea-emergente-que-combina-conhecimentos-de-estat-stica-matem-tica-computa-oeconhecimento-de-dom-nio-para-extrair-insights-evalor-de-grandes-ecomplexos-conjuntos-de-dados-oobjetivo-formar-profissionais-capazes-de-coletar-processar-analisar-einterpretar-dados-utilizando-tcnicas-de-modelagem-estat-stica-eaprendizado-de-mquina-para-apoiar-atomada-de-decis-es-edescobrir-padr-es">
+              <div
+                class="cincia-de-dados-o-curso-de-ci-ncia-de-dados-uma-rea-emergente-que-combina-conhecimentos-de-estat-stica-matem-tica-computa-oeconhecimento-de-dom-nio-para-extrair-insights-evalor-de-grandes-ecomplexos-conjuntos-de-dados-oobjetivo-formar-profissionais-capazes-de-coletar-processar-analisar-einterpretar-dados-utilizando-tcnicas-de-modelagem-estat-stica-eaprendizado-de-mquina-para-apoiar-atomada-de-decis-es-edescobrir-padr-es">
+                <p>
+                  <span class="cincia-de-dados-text">O </span>curso de Ciência
+                  de Dados é uma área emergente que combina conhecimentos de
+                  estatística, matemática, computação e conhecimento de
+                  domínio para extrair insights e valor de grandes e complexos
+                  conjuntos de dados. O objetivo é formar profissionais
+                  capazes de coletar, processar, analisar e interpretar dados,
+                  utilizando técnicas de modelagem estatística e aprendizado
+                  de máquina para apoiar a tomada de decisões e descobrir
+                  padrões.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="cincia-de-dados-tttt-principais-reas-de-estudo-testat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc-perfil-ttoengenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-oreas-de-atua-oengenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops">
+          <div
+            class="cincia-de-dados-ttt-principais-reas-de-estudo-testat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc-perfil-ttoengenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-oreas-de-atua-oengenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops">
+            <div
+              class="cincia-de-dados-tt-principais-reas-de-estudo-testat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc-perfil">
+              <div
+                class="cincia-de-dados-t-principais-reas-de-estudo-testat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc">
+                <div class="cincia-de-dados-principais-reas-de-estudo">
+                  Principais Áreas de Estudo:
+                </div>
+                <div
+                  class="cincia-de-dados-t-estat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc">
+                  <div
+                    class="cincia-de-dados-estat-stica-eprobabilidade-infer-ncia-estat-stica-modelagem-estat-stica-testes-de-hip-teses-matem-tica-lgebra-linear-clculo-otimiza-oprograma-opython-rsql-para-manipula-oean-lise-de-dados-aprendizado-de-mquina-machine-learning-algoritmos-de-classifica-oregress-oagrupamento-redes-neurais-processamento-earmazenamento-de-dados-bancos-de-dados-relacionais-enosql-big-data-hadoop-spark-visualiza-ode-dados-ferramentas-etcnicas-para-comunicar-insights-dom-nio-de-neg-cio-aplica-odas-an-lises-de-dados-em-contextos-espec-ficos-marketing-finan-as-sa-de-etc">
+                    <span>
+                      <div class="cincia-de-dados-spacer"></div>
+                      <ul class="cincia-de-dados-list">
+                        <li>
+                          Estatística e Probabilidade: Inferência Estatística,
+                          Modelagem Estatística, Testes de Hipóteses.
+                        </li>
+                        <li>
+                          Matemática: Álgebra Linear, Cálculo, Otimização.
+                        </li>
+                        <li>
+                          Programação: Python, R, SQL (para manipulação e
+                          análise de dados).
+                        </li>
+                        <li>
+                          Aprendizado de Máquina (Machine Learning):
+                          Algoritmos de Classificação, Regressão, Agrupamento,
+                          Redes Neurais.
+                        </li>
+                        <li>
+                          Processamento e Armazenamento de Dados: Bancos de
+                          Dados (Relacionais e NoSQL), Big Data (Hadoop,
+                          Spark).
+                        </li>
+                        <li>
+                          Visualização de Dados: Ferramentas e Técnicas para
+                          comunicar insights.
+                        </li>
+                        <li>
+                          Domínio de Negócio: Aplicação das análises de dados
+                          em contextos específicos (marketing, finanças,
+                          saúde, etc.).
+                        </li>
+                      </ul>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="cincia-de-dados-perfil">Perfil:</div>
+            </div>
+            <div
+              class="cincia-de-dados-tto-engenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-oreas-de-atua-oengenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops">
+              <div
+                class="cincia-de-dados-to-engenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-oreas-de-atua-o">
+                <div
+                  class="cincia-de-dados-o-engenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-o">
+                  <p>
+                    O engenheiro de software é um profissional com raciocínio
+                    lógico e habilidades de organização, focado na construção
+                    de softwares robustos e de alta qualidade. É ideal para
+                    quem se interessa pelo processo de desenvolvimento de
+                    software em todas as suas etapas, desde a concepção até a
+                    manutenção.
+                  </p>
+                </div>
+                <div class="cincia-de-dados-reas-de-atua-o">
+                  Áreas de Atuação:
+                </div>
+              </div>
+              <div
+                class="cincia-de-dados-engenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops">
+                <p>
+                  Engenheiro de Software, Arquiteto de Software, Desenvolvedor
+                  Full-stack, Analista de Qualidade de Software (QA), Gerente
+                  de Projetos de Software, Engenheiro DevOps.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

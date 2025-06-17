@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500">
+  <title>Engenharia de Software</title>
+  <style rel="stylesheet" crossorigin="">
+    @import url("https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;600;700");
+    @import url("https://api.fontshare.com/css?f[]=sarpanch@400,600,700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto Condensed:wght@400;500");
+    @import url("https://api.fontshare.com/css?f[]=roboto condensed@400,500&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto Serif:wght@400;500");
+    @import url("https://api.fontshare.com/css?f[]=roboto serif@400,500&display=swap");
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e5e7eb;
+    }
+
+    ::before,
+    ::after {
+      --tw-content: "";
+    }
+
+
+    html,
+    :host {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+      tab-size: 4;
+      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: transparent;
+      zoom: 90%;
+    }
+
+
+    body {
+      margin: 0;
+      line-height: inherit;
+      background-color: dodgerblue;
+    }
+
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px;
+    }
+
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+
+    code,
+    kbd,
+    samp,
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      font-size: 1em;
+    }
+
+
+    small {
+      font-size: 80%;
+    }
+
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse;
+    }
+
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      font-size: 100%;
+      font-weight: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+
+    button,
+    input:where([type="button"]),
+    input:where([type="reset"]),
+    input:where([type="submit"]) {
+      -webkit-appearance: button;
+      background-color: transparent;
+      background-image: none;
+    }
+
+
+    :-moz-focusring {
+      outline: auto;
+    }
+
+
+    :-moz-ui-invalid {
+      box-shadow: none;
+    }
+
+
+    progress {
+      vertical-align: baseline;
+    }
+
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+
+    [type="search"] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px;
+    }
+
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+
+
+    summary {
+      display: list-item;
+    }
+
+
+    blockquote,
+    dl,
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    figure,
+    p,
+    pre {
+      margin: 0;
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0;
+    }
+
+    legend {
+      padding: 0;
+    }
+
+    ol,
+    ul,
+    menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    dialog {
+      padding: 0;
+    }
+
+
+    textarea {
+      resize: vertical;
+    }
+
+
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 1;
+      color: #9ca3af;
+    }
+
+
+    button,
+    [role="button"] {
+      cursor: pointer;
+    }
+
+    :disabled {
+      cursor: default;
+    }
+
+
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+      display: block;
+      vertical-align: middle;
+    }
+
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+
+
+
+
+
+    p,
+    ol,
+    ul {
+      margin: 0px;
+    }
+
+    button {
+      padding: 0px;
+    }
+
+    ol,
+    ul {
+      padding-inline-start: 1.5em;
+    }
+
+    input {
+      background-image: none;
+      background-color: transparent;
+    }
+
+    .common-3,
+    .engenharia-de-software-rectangle,
+    .engenharia-de-software-t-engenharia-de-software {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .common-4,
+    .engenharia-de-software-tt-pagina-inicial-sum-rio-tsobre,
+    .engenharia-de-software-t-principais-reas-de-estudo,
+    .engenharia-de-software-t-processos-de-software-metodologias-geis-scrum-kanban-modelo-em-cascata-ciclo-de-vida-do-software-requisitos-de-software-engenharia-de-requisitos-especifica-oprojeto-earquitetura-de-software-padr-es-de-projeto-arquiteturas-de-sistemas-microsservi-os-monol-ticas-qualidade-de-software-testes-de-software-unit-rio-integra-osistema-mtricas-de-qualidade-gerenciamento-de-configura-ogerenciamento-de-projetos-de-software-seguran-ade-software,
+    .engenharia-de-software-t-perfil,
+    .engenharia-de-software-o-engenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-o,
+    .engenharia-de-software-t-reas-de-atua-o {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .common-5,
+    .engenharia-de-software-t-pagina-inicial-sum-rio-tsobre,
+    .engenharia-de-software-tt-introdu-otaengenharia-de-software-uma-disciplina-da-engenharia-que-aplica-abordagens-sistem-ticas-disciplinadas-equantific-veis-ao-desenvolvimento-opera-oemanuten-ode-software-ocurso-de-bacharelado-em-engenharia-de-software-visa-formar-profissionais-capazes-de-projetar-implementar-testar-egerenciar-aqualidade-de-sistemas-de-software-em-larga-escala-garantindo-sua-confiabilidade-efici-ncia-emanutenibilidade-ao-longo-do-ciclo-de-vida,
+    .engenharia-de-software-a-engenharia-de-software-uma-disciplina-da-engenharia-que-aplica-abordagens-sistem-ticas-disciplinadas-equantific-veis-ao-desenvolvimento-opera-oemanuten-ode-software-ocurso-de-bacharelado-em-engenharia-de-software-visa-formar-profissionais-capazes-de-projetar-implementar-testar-egerenciar-aqualidade-de-sistemas-de-software-em-larga-escala-garantindo-sua-confiabilidade-efici-ncia-emanutenibilidade-ao-longo-do-ciclo-de-vida,
+    .engenharia-de-software-engenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops {
+      display: flex;
+      align-items: center;
+    }
+
+    .common-1,
+    .engenharia-de-software-principais-reas-de-estudo,
+    .engenharia-de-software-perfil,
+    .engenharia-de-software-reas-de-atua-o {
+      font-size: 64px;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      font-weight: 600;
+    }
+
+    .common-2,
+    .engenharia-de-software-engenharia-de-software-1,
+    .engenharia-de-software-introdu-o {
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      font-weight: 700;
+    }
+
+    .engenharia-de-software-engenharia-de-software {
+      background-color: dodgerblue;
+      flex-direction: column;
+      padding-bottom: 179px;
+      display: flex;
+      width: 100%;
+      font-family: "Roboto Condensed", ui-sans-serif, system-ui, sans-serif;
+      font-size: 50px;
+      line-height: normal;
+      font-weight: 500;
+      gap: 18px;
+    }
+
+    .engenharia-de-software-rectangle {
+      background-color: darkslateblue;
+      padding-bottom: 40px;
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 40px;
+    }
+
+    .engenharia-de-software-tt-pagina-inicial-sum-rio-tsobre {
+      padding-right: 199px;
+      padding-top: 12px;
+    }
+
+    .engenharia-de-software-t-pagina-inicial-sum-rio-tsobre {
+      row-gap: 35px;
+      column-gap: 48px;
+      flex-grow: 1;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      color: white;
+    }
+
+    .engenharia-de-software-sobre {
+      padding-left: 115px;
+    }
+
+    .engenharia-de-software-t-engenharia-de-software {
+      align-items: center;
+      padding-top: 82px;
+    }
+
+    .engenharia-de-software-engenharia-de-software-1 {
+      text-align: center;
+      font-size: 117px;
+    }
+
+    .engenharia-de-software-tt-introdu-otaengenharia-de-software-uma-disciplina-da-engenharia-que-aplica-abordagens-sistem-ticas-disciplinadas-equantific-veis-ao-desenvolvimento-opera-oemanuten-ode-software-ocurso-de-bacharelado-em-engenharia-de-software-visa-formar-profissionais-capazes-de-projetar-implementar-testar-egerenciar-aqualidade-de-sistemas-de-software-em-larga-escala-garantindo-sua-confiabilidade-efici-ncia-emanutenibilidade-ao-longo-do-ciclo-de-vida {
+      padding-left: 38px;
+      padding-right: 67px;
+      padding-top: 18px;
+      justify-content: center;
+    }
+
+    .engenharia-de-software-t-introdu-otaengenharia-de-software-uma-disciplina-da-engenharia-que-aplica-abordagens-sistem-ticas-disciplinadas-equantific-veis-ao-desenvolvimento-opera-oemanuten-ode-software-ocurso-de-bacharelado-em-engenharia-de-software-visa-formar-profissionais-capazes-de-projetar-implementar-testar-egerenciar-aqualidade-de-sistemas-de-software-em-larga-escala-garantindo-sua-confiabilidade-efici-ncia-emanutenibilidade-ao-longo-do-ciclo-de-vida {
+      flex-grow: 1;
+    }
+
+    .engenharia-de-software-introdu-o {
+      width: 860px;
+      font-size: 120px;
+    }
+
+    .engenharia-de-software-ta-engenharia-de-software-uma-disciplina-da-engenharia-que-aplica-abordagens-sistem-ticas-disciplinadas-equantific-veis-ao-desenvolvimento-opera-oemanuten-ode-software-ocurso-de-bacharelado-em-engenharia-de-software-visa-formar-profissionais-capazes-de-projetar-implementar-testar-egerenciar-aqualidade-de-sistemas-de-software-em-larga-escala-garantindo-sua-confiabilidade-efici-ncia-emanutenibilidade-ao-longo-do-ciclo-de-vida {
+      height: 548px;
+    }
+
+    .engenharia-de-software-a-engenharia-de-software-uma-disciplina-da-engenharia-que-aplica-abordagens-sistem-ticas-disciplinadas-equantific-veis-ao-desenvolvimento-opera-oemanuten-ode-software-ocurso-de-bacharelado-em-engenharia-de-software-visa-formar-profissionais-capazes-de-projetar-implementar-testar-egerenciar-aqualidade-de-sistemas-de-software-em-larga-escala-garantindo-sua-confiabilidade-efici-ncia-emanutenibilidade-ao-longo-do-ciclo-de-vida {
+      margin-bottom: -42px;
+      height: 590px;
+    }
+
+    .engenharia-de-software-text {
+      font-size: 96px;
+    }
+
+    .engenharia-de-software-t-principais-reas-de-estudo {
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 34px;
+    }
+
+    .engenharia-de-software-principais-reas-de-estudo {
+      flex-grow: 1;
+    }
+
+    .engenharia-de-software-t-processos-de-software-metodologias-geis-scrum-kanban-modelo-em-cascata-ciclo-de-vida-do-software-requisitos-de-software-engenharia-de-requisitos-especifica-oprojeto-earquitetura-de-software-padr-es-de-projeto-arquiteturas-de-sistemas-microsservi-os-monol-ticas-qualidade-de-software-testes-de-software-unit-rio-integra-osistema-mtricas-de-qualidade-gerenciamento-de-configura-ogerenciamento-de-projetos-de-software-seguran-ade-software {
+      padding-left: 38px;
+      padding-right: 67px;
+      padding-top: 34px;
+    }
+
+    .engenharia-de-software-processos-de-software-metodologias-geis-scrum-kanban-modelo-em-cascata-ciclo-de-vida-do-software-requisitos-de-software-engenharia-de-requisitos-especifica-oprojeto-earquitetura-de-software-padr-es-de-projeto-arquiteturas-de-sistemas-microsservi-os-monol-ticas-qualidade-de-software-testes-de-software-unit-rio-integra-osistema-mtricas-de-qualidade-gerenciamento-de-configura-ogerenciamento-de-projetos-de-software-seguran-ade-software {
+      flex-grow: 1;
+    }
+
+    .engenharia-de-software-spacer {
+      height: 60px;
+    }
+
+    .engenharia-de-software-list {
+      list-style-type: disc;
+    }
+
+    .engenharia-de-software-t-perfil {
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 132px;
+    }
+
+    .engenharia-de-software-o-engenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-o {
+      margin-left: 38px;
+      margin-right: 67px;
+      margin-top: 14px;
+      height: 364px;
+    }
+
+    .engenharia-de-software-t-reas-de-atua-o {
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 14px;
+    }
+
+    .engenharia-de-software-engenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops {
+      font-family: "Roboto Serif", ui-sans-serif, system-ui, sans-serif;
+      padding-left: 38px;
+      padding-right: 67px;
+    }
+
+    @media (min-width: 1500px) {
+      .engenharia-de-software-t-pagina-inicial-sum-rio-tsobre {
+        flex-wrap: nowrap;
+      }
+    }
+  </style>
+  <style>
+    html {
+      scrollbar-gutter: stable;
+    }
+  </style>
+</head>
+
+<body style="margin: 0px">
+
+  <div class="engenharia-de-software-engenharia-de-software">
+    <div class="engenharia-de-software-rectangle">
+      <div class="engenharia-de-software-tt-pagina-inicial-sum-rio-tsobre">
+        <div class="engenharia-de-software-t-pagina-inicial-sum-rio-tsobre">
+          <div><a href="../main.html">Pagina Inicial</a></div>
+          <div><a href="../sumario.html">Sumário</a></div>
+
+        </div>
+      </div>
+    </div>
+    <div class="engenharia-de-software-t-engenharia-de-software">
+      <div class="engenharia-de-software-engenharia-de-software-1">
+        Engenharia de Software
+      </div>
+    </div>
+    <div
+      class="engenharia-de-software-tt-introdu-otaengenharia-de-software-uma-disciplina-da-engenharia-que-aplica-abordagens-sistem-ticas-disciplinadas-equantific-veis-ao-desenvolvimento-opera-oemanuten-ode-software-ocurso-de-bacharelado-em-engenharia-de-software-visa-formar-profissionais-capazes-de-projetar-implementar-testar-egerenciar-aqualidade-de-sistemas-de-software-em-larga-escala-garantindo-sua-confiabilidade-efici-ncia-emanutenibilidade-ao-longo-do-ciclo-de-vida">
+      <div
+        class="engenharia-de-software-t-introdu-otaengenharia-de-software-uma-disciplina-da-engenharia-que-aplica-abordagens-sistem-ticas-disciplinadas-equantific-veis-ao-desenvolvimento-opera-oemanuten-ode-software-ocurso-de-bacharelado-em-engenharia-de-software-visa-formar-profissionais-capazes-de-projetar-implementar-testar-egerenciar-aqualidade-de-sistemas-de-software-em-larga-escala-garantindo-sua-confiabilidade-efici-ncia-emanutenibilidade-ao-longo-do-ciclo-de-vida">
+        <div class="engenharia-de-software-introdu-o">Introdução:</div>
+        <div
+          class="engenharia-de-software-ta-engenharia-de-software-uma-disciplina-da-engenharia-que-aplica-abordagens-sistem-ticas-disciplinadas-equantific-veis-ao-desenvolvimento-opera-oemanuten-ode-software-ocurso-de-bacharelado-em-engenharia-de-software-visa-formar-profissionais-capazes-de-projetar-implementar-testar-egerenciar-aqualidade-de-sistemas-de-software-em-larga-escala-garantindo-sua-confiabilidade-efici-ncia-emanutenibilidade-ao-longo-do-ciclo-de-vida">
+          <div
+            class="engenharia-de-software-a-engenharia-de-software-uma-disciplina-da-engenharia-que-aplica-abordagens-sistem-ticas-disciplinadas-equantific-veis-ao-desenvolvimento-opera-oemanuten-ode-software-ocurso-de-bacharelado-em-engenharia-de-software-visa-formar-profissionais-capazes-de-projetar-implementar-testar-egerenciar-aqualidade-de-sistemas-de-software-em-larga-escala-garantindo-sua-confiabilidade-efici-ncia-emanutenibilidade-ao-longo-do-ciclo-de-vida">
+            <p>
+              <span class="engenharia-de-software-text">A </span>Engenharia
+              de Software é uma disciplina da engenharia que aplica
+              abordagens sistemáticas, disciplinadas e quantificáveis ao
+              desenvolvimento, operação e manutenção de software. O curso de
+              Bacharelado em Engenharia de Software visa formar
+              profissionais capazes de projetar, implementar, testar e
+              gerenciar a qualidade de sistemas de software em larga escala,
+              garantindo sua confiabilidade, eficiência e manutenibilidade
+              ao longo do ciclo de vida.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="engenharia-de-software-t-principais-reas-de-estudo">
+      <div class="engenharia-de-software-principais-reas-de-estudo">
+        Principais Áreas de Estudo:
+      </div>
+    </div>
+    <div
+      class="engenharia-de-software-t-processos-de-software-metodologias-geis-scrum-kanban-modelo-em-cascata-ciclo-de-vida-do-software-requisitos-de-software-engenharia-de-requisitos-especifica-oprojeto-earquitetura-de-software-padr-es-de-projeto-arquiteturas-de-sistemas-microsservi-os-monol-ticas-qualidade-de-software-testes-de-software-unit-rio-integra-osistema-mtricas-de-qualidade-gerenciamento-de-configura-ogerenciamento-de-projetos-de-software-seguran-ade-software">
+      <div
+        class="engenharia-de-software-processos-de-software-metodologias-geis-scrum-kanban-modelo-em-cascata-ciclo-de-vida-do-software-requisitos-de-software-engenharia-de-requisitos-especifica-oprojeto-earquitetura-de-software-padr-es-de-projeto-arquiteturas-de-sistemas-microsservi-os-monol-ticas-qualidade-de-software-testes-de-software-unit-rio-integra-osistema-mtricas-de-qualidade-gerenciamento-de-configura-ogerenciamento-de-projetos-de-software-seguran-ade-software">
+        <span>
+          <div class="engenharia-de-software-spacer"></div>
+          <ul class="engenharia-de-software-list">
+            <li>
+              Processos de Software: Metodologias Ágeis (Scrum, Kanban),
+              Modelo em Cascata, Ciclo de Vida do Software.
+            </li>
+            <li>
+              Requisitos de Software: Engenharia de Requisitos,
+              Especificação.
+            </li>
+            <li>
+              Projeto e Arquitetura de Software: Padrões de Projeto,
+              Arquiteturas de Sistemas (Microsserviços, Monolíticas).
+            </li>
+            <li>
+              Qualidade de Software: Testes de Software (Unitário,
+              Integração, Sistema), Métricas de Qualidade, Gerenciamento de
+              Configuração.
+            </li>
+            <li>Gerenciamento de Projetos de Software.</li>
+            <li>Segurança de Software.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <div class="engenharia-de-software-t-perfil">
+      <div class="engenharia-de-software-perfil">Perfil:</div>
+    </div>
+    <div
+      class="engenharia-de-software-o-engenheiro-de-software-um-profissional-com-racioc-nio-lgico-ehabilidades-de-organiza-ofocado-na-constru-ode-softwares-robustos-ede-alta-qualidade-ideal-para-quem-se-interessa-pelo-processo-de-desenvolvimento-de-software-em-todas-as-suas-etapas-desde-aconcep-oat-amanuten-o">
+      <p>
+        O engenheiro de software é um profissional com raciocínio lógico e
+        habilidades de organização, focado na construção de softwares
+        robustos e de alta qualidade. É ideal para quem se interessa pelo
+        processo de desenvolvimento de software em todas as suas etapas,
+        desde a concepção até a manutenção.
+      </p>
+    </div>
+    <div class="engenharia-de-software-t-reas-de-atua-o">
+      <div class="engenharia-de-software-reas-de-atua-o">
+        Áreas de Atuação:
+      </div>
+    </div>
+    <div
+      class="engenharia-de-software-engenheiro-de-software-arquiteto-de-software-desenvolvedor-full-stack-analista-de-qualidade-de-software-qa-gerente-de-projetos-de-software-engenheiro-devops">
+      <p>
+        Engenheiro de Software, Arquiteto de Software, Desenvolvedor
+        Full-stack, Analista de Qualidade de Software (QA), Gerente de
+        Projetos de Software, Engenheiro DevOps.
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>:

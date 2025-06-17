@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500">
+  <title>Engenharia da Computação</title>
+  <style rel="stylesheet" crossorigin="">
+    @import url("https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;600;700");
+    @import url("https://api.fontshare.com/css?f[]=sarpanch@400,600,700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto Condensed:wght@400;500");
+    @import url("https://api.fontshare.com/css?f[]=roboto condensed@400,500&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto Serif:wght@400;500");
+    @import url("https://api.fontshare.com/css?f[]=roboto serif@400,500&display=swap");
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e5e7eb;
+    }
+
+    ::before,
+    ::after {
+      --tw-content: "";
+    }
+
+
+    html,
+    :host {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+      tab-size: 4;
+      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: transparent;
+      zoom: 80%;
+    }
+
+
+    body {
+      margin: 0;
+      line-height: inherit;
+    }
+
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px;
+    }
+
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+
+    code,
+    kbd,
+    samp,
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      font-size: 1em;
+    }
+
+
+    small {
+      font-size: 80%;
+    }
+
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse;
+    }
+
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      font-size: 100%;
+      font-weight: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+
+    button,
+    input:where([type="button"]),
+    input:where([type="reset"]),
+    input:where([type="submit"]) {
+      -webkit-appearance: button;
+      background-color: transparent;
+      background-image: none;
+    }
+
+
+    :-moz-focusring {
+      outline: auto;
+    }
+
+
+    :-moz-ui-invalid {
+      box-shadow: none;
+    }
+
+
+    progress {
+      vertical-align: baseline;
+    }
+
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+
+    [type="search"] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px;
+    }
+
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+
+
+    summary {
+      display: list-item;
+    }
+
+
+    blockquote,
+    dl,
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    figure,
+    p,
+    pre {
+      margin: 0;
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0;
+    }
+
+    legend {
+      padding: 0;
+    }
+
+    ol,
+    ul,
+    menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    dialog {
+      padding: 0;
+    }
+
+
+    textarea {
+      resize: vertical;
+    }
+
+
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 1;
+      color: #9ca3af;
+    }
+
+
+    button,
+    [role="button"] {
+      cursor: pointer;
+    }
+
+    :disabled {
+      cursor: default;
+    }
+
+
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+      display: block;
+      vertical-align: middle;
+    }
+
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+
+
+
+
+
+    p,
+    ol,
+    ul {
+      margin: 0px;
+    }
+
+    button {
+      padding: 0px;
+    }
+
+    ol,
+    ul {
+      padding-inline-start: 1.5em;
+    }
+
+    input {
+      background-image: none;
+      background-color: transparent;
+    }
+
+    .common-3,
+    .engenharia-da-computao-rectangle,
+    .engenharia-da-computao-t-engenharia-da-computa-o {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .common-4,
+    .engenharia-da-computao-tt-pagina-inicial-sum-rio-tsobre,
+    .engenharia-da-computao-t-introdu-o,
+    .engenharia-da-computao-t-perfil,
+    .engenharia-da-computao-t-reas-de-atua-o,
+    .engenharia-da-computao-engenheiro-de-hardware-engenheiro-de-sistemas-embarcados-engenheiro-de-rob-tica-engenheiro-de-automa-odesenvolvedor-de-firmware-projetista-de-circuitos-integrados {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .common-5,
+    .engenharia-da-computao-t-pagina-inicial-sum-rio-tsobre,
+    .engenharia-da-computao-o-curso-de-engenharia-da-computa-ouma-fus-oentre-aengenharia-el-trica-eletr-nica-eaci-ncia-da-computa-oele-capacita-oprofissional-aprojetar-econstruir-sistemas-que-integram-hardware-esoftware-ofoco-est-no-desenvolvimento-de-sistemas-embarcados-arquiteturas-de-computadores-dispositivos-eletr-nicos-program-veis-automa-oerob-tica-al-mde-ter-uma-base-slida-em-software,
+    .engenharia-da-computao-o-engenheiro-da-computa-oum-profissional-com-forte-base-em-hardware-esoftware-capaz-de-desenvolver-solu-es-que-exigem-aintegra-ode-ambos-ideal-para-quem-tem-interesse-em-eletr-nica-rob-tica-automa-oena-cria-ode-dispositivos-inteligentes {
+      display: flex;
+      align-items: center;
+    }
+
+    .common-1,
+    .engenharia-da-computao-principais-reas-de-estudo,
+    .engenharia-da-computao-perfil,
+    .engenharia-da-computao-reas-de-atua-o {
+      font-size: 64px;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      font-weight: 600;
+    }
+
+    .common-2,
+    .engenharia-da-computao-engenharia-da-computa-o1,
+    .engenharia-da-computao-introdu-o {
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      font-weight: 700;
+    }
+
+    .engenharia-da-computao-engenharia-da-computa-o {
+      background-color: dodgerblue;
+      padding-bottom: 390px;
+      width: 100%;
+      font-family: "Roboto Condensed", ui-sans-serif, system-ui, sans-serif;
+      font-size: 50px;
+      line-height: normal;
+      font-weight: 500;
+    }
+
+    .engenharia-da-computao-rectangle {
+      background-color: darkslateblue;
+      padding-bottom: 40px;
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 40px;
+    }
+
+    .engenharia-da-computao-tt-pagina-inicial-sum-rio-tsobre {
+      padding-right: 199px;
+      padding-top: 12px;
+    }
+
+    .engenharia-da-computao-t-pagina-inicial-sum-rio-tsobre {
+      row-gap: 35px;
+      column-gap: 48px;
+      flex-grow: 1;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      color: white;
+    }
+
+    .engenharia-da-computao-sobre {
+      padding-left: 115px;
+    }
+
+    .engenharia-da-computao-t-engenharia-da-computa-o {
+      align-items: center;
+      padding-top: 67px;
+    }
+
+    .engenharia-da-computao-engenharia-da-computa-o1 {
+      text-align: center;
+      font-size: 100px;
+    }
+
+    .engenharia-da-computao-t-introdu-o {
+      padding-left: 29px;
+      padding-right: 29px;
+      padding-top: 67px;
+    }
+
+    .engenharia-da-computao-introdu-o {
+      flex-grow: 1;
+      font-size: 120px;
+    }
+
+    .engenharia-da-computao-o-curso-de-engenharia-da-computa-ouma-fus-oentre-aengenharia-el-trica-eletr-nica-eaci-ncia-da-computa-oele-capacita-oprofissional-aprojetar-econstruir-sistemas-que-integram-hardware-esoftware-ofoco-est-no-desenvolvimento-de-sistemas-embarcados-arquiteturas-de-computadores-dispositivos-eletr-nicos-program-veis-automa-oerob-tica-al-mde-ter-uma-base-slida-em-software {
+      margin-left: 38px;
+      margin-right: 67px;
+      height: 454px;
+    }
+
+    .engenharia-da-computao-text {
+      font-size: 96px;
+    }
+
+    .engenharia-da-computao-t-principais-reas-de-estudo {
+      padding-right: 29px;
+      padding-top: 67px;
+    }
+
+    .engenharia-da-computao-hardware-eletr-nica-digital-eanal-gica-circuitos-lgicos-arquitetura-eorganiza-ode-computadores-microprocessadores-emicrocontroladores-software-linguagens-de-programa-ode-baixo-nvel-assembly-csistemas-operacionais-com-foco-em-sistemas-embarcados-desenvolvimento-de-firmware-redes-de-computadores-sistemas-embarcados-automa-oecontrole-rob-tica {
+      padding-left: 29px;
+      padding-right: 76px;
+    }
+
+    .engenharia-da-computao-spacer {
+      height: 60px;
+    }
+
+    .engenharia-da-computao-list {
+      list-style-type: disc;
+    }
+
+    .engenharia-da-computao-t-perfil {
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 101px;
+    }
+
+    .engenharia-da-computao-to-engenheiro-da-computa-oum-profissional-com-forte-base-em-hardware-esoftware-capaz-de-desenvolver-solu-es-que-exigem-aintegra-ode-ambos-ideal-para-quem-tem-interesse-em-eletr-nica-rob-tica-automa-oena-cria-ode-dispositivos-inteligentes {
+      padding-left: 38px;
+      padding-right: 67px;
+      padding-top: 67px;
+    }
+
+    .engenharia-da-computao-t-reas-de-atua-o {
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 101px;
+    }
+
+    .engenharia-da-computao-engenheiro-de-hardware-engenheiro-de-sistemas-embarcados-engenheiro-de-rob-tica-engenheiro-de-automa-odesenvolvedor-de-firmware-projetista-de-circuitos-integrados {
+      font-family: "Roboto Serif", ui-sans-serif, system-ui, sans-serif;
+      padding-left: 38px;
+      padding-right: 67px;
+      padding-top: 40px;
+    }
+
+    @media (min-width: 1500px) {
+      .engenharia-da-computao-t-pagina-inicial-sum-rio-tsobre {
+        flex-wrap: nowrap;
+      }
+    }
+  </style>
+  <style>
+    html {
+      scrollbar-gutter: stable;
+    }
+  </style>
+</head>
+
+<body style="margin: 0px">
+  <div id="firejet-html-app">
+    <div class="engenharia-da-computao-engenharia-da-computa-o">
+      <div class="engenharia-da-computao-rectangle">
+        <div class="engenharia-da-computao-tt-pagina-inicial-sum-rio-tsobre">
+          <div class="engenharia-da-computao-t-pagina-inicial-sum-rio-tsobre">
+            <div><a href="../main.html">Pagina Inicial</a></div>
+            <div><a href="../sumario.html">Sumário</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="engenharia-da-computao-t-engenharia-da-computa-o">
+        <div class="engenharia-da-computao-engenharia-da-computa-o1">
+          Engenharia da Computação
+        </div>
+      </div>
+      <div class="engenharia-da-computao-t-introdu-o">
+        <div class="engenharia-da-computao-introdu-o">Introdução:</div>
+      </div>
+      <div
+        class="engenharia-da-computao-o-curso-de-engenharia-da-computa-ouma-fus-oentre-aengenharia-el-trica-eletr-nica-eaci-ncia-da-computa-oele-capacita-oprofissional-aprojetar-econstruir-sistemas-que-integram-hardware-esoftware-ofoco-est-no-desenvolvimento-de-sistemas-embarcados-arquiteturas-de-computadores-dispositivos-eletr-nicos-program-veis-automa-oerob-tica-al-mde-ter-uma-base-slida-em-software">
+        <p>
+          <span class="engenharia-da-computao-text">O </span>curso de
+          Engenharia da Computação é uma fusão entre a Engenharia
+          Elétrica/Eletrônica e a Ciência da Computação. Ele capacita o
+          profissional a projetar e construir sistemas que integram hardware e
+          software. O foco está no desenvolvimento de sistemas embarcados,
+          arquiteturas de computadores, dispositivos eletrônicos programáveis,
+          automação e robótica, além de ter uma base sólida em software.
+        </p>
+      </div>
+      <div class="engenharia-da-computao-t-principais-reas-de-estudo">
+        <div class="engenharia-da-computao-principais-reas-de-estudo">
+          Principais Áreas de Estudo:
+        </div>
+      </div>
+      <div
+        class="engenharia-da-computao-hardware-eletr-nica-digital-eanal-gica-circuitos-lgicos-arquitetura-eorganiza-ode-computadores-microprocessadores-emicrocontroladores-software-linguagens-de-programa-ode-baixo-nvel-assembly-csistemas-operacionais-com-foco-em-sistemas-embarcados-desenvolvimento-de-firmware-redes-de-computadores-sistemas-embarcados-automa-oecontrole-rob-tica">
+        <span>
+          <div class="engenharia-da-computao-spacer"></div>
+          <ul class="engenharia-da-computao-list">
+            <li>
+              Hardware: Eletrônica Digital e Analógica, Circuitos Lógicos,
+              Arquitetura e Organização de Computadores, Microprocessadores e
+              Microcontroladores.
+            </li>
+            <li>
+              Software: Linguagens de Programação de Baixo Nível (Assembly,
+              C), Sistemas Operacionais (com foco em sistemas embarcados),
+              Desenvolvimento de Firmware.
+            </li>
+            <li>Redes de Computadores.</li>
+            <li>Sistemas Embarcados.</li>
+            <li>Automação e Controle.</li>
+            <li>Robótica.</li>
+          </ul>
+        </span>
+      </div>
+      <div class="engenharia-da-computao-t-perfil">
+        <div class="engenharia-da-computao-perfil">Perfil:</div>
+      </div>
+      <div
+        class="engenharia-da-computao-to-engenheiro-da-computa-oum-profissional-com-forte-base-em-hardware-esoftware-capaz-de-desenvolver-solu-es-que-exigem-aintegra-ode-ambos-ideal-para-quem-tem-interesse-em-eletr-nica-rob-tica-automa-oena-cria-ode-dispositivos-inteligentes">
+        <div
+          class="engenharia-da-computao-o-engenheiro-da-computa-oum-profissional-com-forte-base-em-hardware-esoftware-capaz-de-desenvolver-solu-es-que-exigem-aintegra-ode-ambos-ideal-para-quem-tem-interesse-em-eletr-nica-rob-tica-automa-oena-cria-ode-dispositivos-inteligentes">
+          <p>
+            O engenheiro da computação é um profissional com forte base em
+            hardware e software, capaz de desenvolver soluções que exigem a
+            integração de ambos. É ideal para quem tem interesse em
+            eletrônica, robótica, automação e na criação de dispositivos
+            inteligentes.
+          </p>
+        </div>
+      </div>
+      <div class="engenharia-da-computao-t-reas-de-atua-o">
+        <div class="engenharia-da-computao-reas-de-atua-o">
+          Áreas de Atuação:
+        </div>
+      </div>
+      <div
+        class="engenharia-da-computao-engenheiro-de-hardware-engenheiro-de-sistemas-embarcados-engenheiro-de-rob-tica-engenheiro-de-automa-odesenvolvedor-de-firmware-projetista-de-circuitos-integrados">
+        <p>
+          Engenheiro de Hardware, Engenheiro de Sistemas Embarcados,
+          Engenheiro de Robótica, Engenheiro de Automação, Desenvolvedor de
+          Firmware, Projetista de Circuitos Integrados.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>

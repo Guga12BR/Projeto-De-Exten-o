@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500">
+  <title>HTML Preview</title>
+  <style rel="stylesheet" crossorigin="">
+    @import url("https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;600;700");
+    @import url("https://api.fontshare.com/css?f[]=sarpanch@400,600,700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto Condensed:wght@400;500");
+    @import url("https://api.fontshare.com/css?f[]=roboto condensed@400,500&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto Serif:wght@400;500");
+    @import url("https://api.fontshare.com/css?f[]=roboto serif@400,500&display=swap");
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e5e7eb;
+    }
+
+    ::before,
+    ::after {
+      --tw-content: "";
+    }
+
+
+    html,
+    :host {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+      tab-size: 4;
+      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: transparent;
+      zoom: 50%;
+    }
+
+
+    body {
+      margin: 0;
+      line-height: inherit;
+    }
+
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px;
+    }
+
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+
+    code,
+    kbd,
+    samp,
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      font-size: 1em;
+    }
+
+
+    small {
+      font-size: 80%;
+    }
+
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse;
+    }
+
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      font-size: 100%;
+      font-weight: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+
+    button,
+    input:where([type="button"]),
+    input:where([type="reset"]),
+    input:where([type="submit"]) {
+      -webkit-appearance: button;
+      background-color: transparent;
+      background-image: none;
+    }
+
+
+    :-moz-focusring {
+      outline: auto;
+    }
+
+
+    :-moz-ui-invalid {
+      box-shadow: none;
+    }
+
+
+    progress {
+      vertical-align: baseline;
+    }
+
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+
+    [type="search"] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px;
+    }
+
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+
+
+    summary {
+      display: list-item;
+    }
+
+
+    blockquote,
+    dl,
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    figure,
+    p,
+    pre {
+      margin: 0;
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0;
+    }
+
+    legend {
+      padding: 0;
+    }
+
+    ol,
+    ul,
+    menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    dialog {
+      padding: 0;
+    }
+
+
+    textarea {
+      resize: vertical;
+    }
+
+
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 1;
+      color: #9ca3af;
+    }
+
+
+    button,
+    [role="button"] {
+      cursor: pointer;
+    }
+
+    :disabled {
+      cursor: default;
+    }
+
+
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+      display: block;
+      vertical-align: middle;
+    }
+
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+
+
+
+
+
+    p,
+    ol,
+    ul {
+      margin: 0px;
+    }
+
+    button {
+      padding: 0px;
+    }
+
+    ol,
+    ul {
+      padding-inline-start: 1.5em;
+    }
+
+    input {
+      background-image: none;
+      background-color: transparent;
+    }
+
+    .common-3,
+    .ciencia-da-computao-rectangle,
+    .ciencia-da-computao-t-ci-ncia-da-computa-o {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .common-4,
+    .ciencia-da-computao-tt-pagina-inicial-sum-rio-tsobre,
+    .ciencia-da-computao-t-perfil,
+    .ciencia-da-computao-o-cientista-da-computa-oum-pensador-anal-tico-eabstrato-com-forte-capacidade-de-resolver-problemas-edesenvolver-novas-abordagens-ideal-para-quem-busca-atuar-com-pesquisa-desenvolvimento-de-algoritmos-complexos-novas-tecnologias-intelig-ncia-artificial-eci-ncia-de-dados,
+    .ciencia-da-computao-t-reas-de-atua-o {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .common-5,
+    .ciencia-da-computao-t-pagina-inicial-sum-rio-tsobre,
+    .ciencia-da-computao-tt-introdu-otocurso-de-ci-ncia-da-computa-ofoca-nos-fundamentos-te-ricos-ematem-ticos-da-computa-oaborda-aestrutura-de-dados-algoritmos-teoria-da-computabilidade-linguagens-de-programa-oarquitetura-de-computadores-sistemas-operacionais-eintelig-ncia-artificial-oobjetivo-formar-profissionais-capazes-de-entender-os-princ-pios-subjacentes-aqualquer-sistema-computacional-edesenvolver-solu-es-inovadoras-para-problemas-complexos-muitas-vezes-em-reas-de-pesquisa-edesenvolvimento-tprincipais-reas-de-estudo-tfundamentos-te-ricos-matem-tica-discreta-lgica-teoria-da-computa-oan-lise-de-algoritmos-programa-oestruturas-de-dados-paradigmas-de-programa-oorientada-aobjetos-funcional-etc-linguagens-de-programa-osistemas-sistemas-operacionais-redes-de-computadores-bancos-de-dados-intelig-ncia-artificial-machine-learning-processamento-de-linguagem-natural-vis-ocomputacional-computa-ogr-fica-eprocessamento-de-imagens,
+    .ciencia-da-computao-o-curso-de-ci-ncia-da-computa-ofoca-nos-fundamentos-te-ricos-ematem-ticos-da-computa-oaborda-aestrutura-de-dados-algoritmos-teoria-da-computabilidade-linguagens-de-programa-oarquitetura-de-computadores-sistemas-operacionais-eintelig-ncia-artificial-oobjetivo-formar-profissionais-capazes-de-entender-os-princ-pios-subjacentes-aqualquer-sistema-computacional-edesenvolver-solu-es-inovadoras-para-problemas-complexos-muitas-vezes-em-reas-de-pesquisa-edesenvolvimento,
+    .ciencia-da-computao-principais-reas-de-estudo,
+    .ciencia-da-computao-pesquisador-desenvolvedor-de-software-em-reas-de-pdanalista-de-sistemas-engenheiro-de-machine-learning-arquiteto-de-software-especialista-em-seguran-ada-informa-o {
+      display: flex;
+      align-items: center;
+    }
+
+    .common-1,
+    .ciencia-da-computao-ci-ncia-da-computa-o,
+    .ciencia-da-computao-introdu-o {
+      font-size: 120px;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      font-weight: 700;
+    }
+
+    .common-2,
+    .ciencia-da-computao-principais-reas-de-estudo,
+    .ciencia-da-computao-perfil,
+    .ciencia-da-computao-reas-de-atua-o {
+      font-size: 64px;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      font-weight: 600;
+    }
+
+    .ciencia-da-computao-ciencia-da-computa-o {
+      background-color: dodgerblue;
+      flex-direction: column;
+      padding-bottom: 195px;
+      display: flex;
+      width: 100%;
+      font-size: 50px;
+      line-height: normal;
+      font-weight: 500;
+      gap: 18px;
+    }
+
+    .ciencia-da-computao-rectangle {
+      background-color: darkslateblue;
+      padding-bottom: 40px;
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 40px;
+    }
+
+    .ciencia-da-computao-tt-pagina-inicial-sum-rio-tsobre {
+      padding-right: 199px;
+      padding-top: 12px;
+    }
+
+    .ciencia-da-computao-t-pagina-inicial-sum-rio-tsobre {
+      row-gap: 35px;
+      column-gap: 48px;
+      flex-grow: 1;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      color: white;
+    }
+
+    .ciencia-da-computao-sobre {
+      padding-left: 115px;
+    }
+
+    .ciencia-da-computao-t-ci-ncia-da-computa-o {
+      align-items: center;
+      padding-top: 72px;
+    }
+
+    .ciencia-da-computao-ci-ncia-da-computa-o {
+      text-align: center;
+    }
+
+    .ciencia-da-computao-tt-introdu-otocurso-de-ci-ncia-da-computa-ofoca-nos-fundamentos-te-ricos-ematem-ticos-da-computa-oaborda-aestrutura-de-dados-algoritmos-teoria-da-computabilidade-linguagens-de-programa-oarquitetura-de-computadores-sistemas-operacionais-eintelig-ncia-artificial-oobjetivo-formar-profissionais-capazes-de-entender-os-princ-pios-subjacentes-aqualquer-sistema-computacional-edesenvolver-solu-es-inovadoras-para-problemas-complexos-muitas-vezes-em-reas-de-pesquisa-edesenvolvimento-tprincipais-reas-de-estudo-tfundamentos-te-ricos-matem-tica-discreta-lgica-teoria-da-computa-oan-lise-de-algoritmos-programa-oestruturas-de-dados-paradigmas-de-programa-oorientada-aobjetos-funcional-etc-linguagens-de-programa-osistemas-sistemas-operacionais-redes-de-computadores-bancos-de-dados-intelig-ncia-artificial-machine-learning-processamento-de-linguagem-natural-vis-ocomputacional-computa-ogr-fica-eprocessamento-de-imagens {
+      padding-left: 38px;
+      padding-right: 67px;
+      padding-top: 24px;
+      justify-content: center;
+    }
+
+    .ciencia-da-computao-t-introdu-otocurso-de-ci-ncia-da-computa-ofoca-nos-fundamentos-te-ricos-ematem-ticos-da-computa-oaborda-aestrutura-de-dados-algoritmos-teoria-da-computabilidade-linguagens-de-programa-oarquitetura-de-computadores-sistemas-operacionais-eintelig-ncia-artificial-oobjetivo-formar-profissionais-capazes-de-entender-os-princ-pios-subjacentes-aqualquer-sistema-computacional-edesenvolver-solu-es-inovadoras-para-problemas-complexos-muitas-vezes-em-reas-de-pesquisa-edesenvolvimento-tprincipais-reas-de-estudo-tfundamentos-te-ricos-matem-tica-discreta-lgica-teoria-da-computa-oan-lise-de-algoritmos-programa-oestruturas-de-dados-paradigmas-de-programa-oorientada-aobjetos-funcional-etc-linguagens-de-programa-osistemas-sistemas-operacionais-redes-de-computadores-bancos-de-dados-intelig-ncia-artificial-machine-learning-processamento-de-linguagem-natural-vis-ocomputacional-computa-ogr-fica-eprocessamento-de-imagens {
+      flex-grow: 1;
+      font-family: "Roboto Condensed", ui-sans-serif, system-ui, sans-serif;
+    }
+
+    .ciencia-da-computao-introdu-o {
+      width: 860px;
+    }
+
+    .ciencia-da-computao-to-curso-de-ci-ncia-da-computa-ofoca-nos-fundamentos-te-ricos-ematem-ticos-da-computa-oaborda-aestrutura-de-dados-algoritmos-teoria-da-computabilidade-linguagens-de-programa-oarquitetura-de-computadores-sistemas-operacionais-eintelig-ncia-artificial-oobjetivo-formar-profissionais-capazes-de-entender-os-princ-pios-subjacentes-aqualquer-sistema-computacional-edesenvolver-solu-es-inovadoras-para-problemas-complexos-muitas-vezes-em-reas-de-pesquisa-edesenvolvimento {
+      height: 548px;
+    }
+
+    .ciencia-da-computao-o-curso-de-ci-ncia-da-computa-ofoca-nos-fundamentos-te-ricos-ematem-ticos-da-computa-oaborda-aestrutura-de-dados-algoritmos-teoria-da-computabilidade-linguagens-de-programa-oarquitetura-de-computadores-sistemas-operacionais-eintelig-ncia-artificial-oobjetivo-formar-profissionais-capazes-de-entender-os-princ-pios-subjacentes-aqualquer-sistema-computacional-edesenvolver-solu-es-inovadoras-para-problemas-complexos-muitas-vezes-em-reas-de-pesquisa-edesenvolvimento {
+      margin-bottom: -42px;
+      height: 590px;
+    }
+
+    .ciencia-da-computao-text {
+      font-size: 96px;
+    }
+
+    .ciencia-da-computao-t-principais-reas-de-estudo {
+      height: 538px;
+    }
+
+    .ciencia-da-computao-principais-reas-de-estudo {
+      margin-bottom: -135px;
+      height: 673px;
+    }
+
+    .ciencia-da-computao-t-fundamentos-te-ricos-matem-tica-discreta-lgica-teoria-da-computa-oan-lise-de-algoritmos-programa-oestruturas-de-dados-paradigmas-de-programa-oorientada-aobjetos-funcional-etc-linguagens-de-programa-osistemas-sistemas-operacionais-redes-de-computadores-bancos-de-dados-intelig-ncia-artificial-machine-learning-processamento-de-linguagem-natural-vis-ocomputacional-computa-ogr-fica-eprocessamento-de-imagens {
+      height: 307px;
+    }
+
+    .ciencia-da-computao-fundamentos-te-ricos-matem-tica-discreta-lgica-teoria-da-computa-oan-lise-de-algoritmos-programa-oestruturas-de-dados-paradigmas-de-programa-oorientada-aobjetos-funcional-etc-linguagens-de-programa-osistemas-sistemas-operacionais-redes-de-computadores-bancos-de-dados-intelig-ncia-artificial-machine-learning-processamento-de-linguagem-natural-vis-ocomputacional-computa-ogr-fica-eprocessamento-de-imagens {
+      margin-bottom: -341px;
+    }
+
+    .ciencia-da-computao-spacer {
+      height: 60px;
+    }
+
+    .ciencia-da-computao-list {
+      list-style-type: disc;
+    }
+
+    .ciencia-da-computao-t-perfil {
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 43px;
+    }
+
+    .ciencia-da-computao-o-cientista-da-computa-oum-pensador-anal-tico-eabstrato-com-forte-capacidade-de-resolver-problemas-edesenvolver-novas-abordagens-ideal-para-quem-busca-atuar-com-pesquisa-desenvolvimento-de-algoritmos-complexos-novas-tecnologias-intelig-ncia-artificial-eci-ncia-de-dados {
+      font-family: "Roboto Serif", ui-sans-serif, system-ui, sans-serif;
+      padding-left: 38px;
+      padding-right: 67px;
+      padding-top: 14px;
+    }
+
+    .ciencia-da-computao-t-reas-de-atua-o {
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 14px;
+    }
+
+    .ciencia-da-computao-pesquisador-desenvolvedor-de-software-em-reas-de-pdanalista-de-sistemas-engenheiro-de-machine-learning-arquiteto-de-software-especialista-em-seguran-ada-informa-o {
+      font-family: "Roboto Serif", ui-sans-serif, system-ui, sans-serif;
+      padding-left: 38px;
+      padding-right: 67px;
+    }
+
+    @media (min-width: 1500px) {
+      .ciencia-da-computao-t-pagina-inicial-sum-rio-tsobre {
+        flex-wrap: nowrap;
+      }
+    }
+  </style>
+  <style>
+    html {
+      scrollbar-gutter: stable;
+    }
+  </style>
+</head>
+
+<body style="margin: 0px">
+
+  <div class="ciencia-da-computao-ciencia-da-computa-o">
+    <div class="ciencia-da-computao-rectangle">
+      <div class="ciencia-da-computao-tt-pagina-inicial-sum-rio-tsobre">
+        <div class="ciencia-da-computao-t-pagina-inicial-sum-rio-tsobre">
+          <div><a href="../main.html">Pagina Inicial</a></div>
+          <div><a href="../sumario.html">Sumário</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="ciencia-da-computao-t-ci-ncia-da-computa-o">
+      <div class="ciencia-da-computao-ci-ncia-da-computa-o">
+        Ciência da Computação
+      </div>
+    </div>
+    <div
+      class="ciencia-da-computao-tt-introdu-otocurso-de-ci-ncia-da-computa-ofoca-nos-fundamentos-te-ricos-ematem-ticos-da-computa-oaborda-aestrutura-de-dados-algoritmos-teoria-da-computabilidade-linguagens-de-programa-oarquitetura-de-computadores-sistemas-operacionais-eintelig-ncia-artificial-oobjetivo-formar-profissionais-capazes-de-entender-os-princ-pios-subjacentes-aqualquer-sistema-computacional-edesenvolver-solu-es-inovadoras-para-problemas-complexos-muitas-vezes-em-reas-de-pesquisa-edesenvolvimento-tprincipais-reas-de-estudo-tfundamentos-te-ricos-matem-tica-discreta-lgica-teoria-da-computa-oan-lise-de-algoritmos-programa-oestruturas-de-dados-paradigmas-de-programa-oorientada-aobjetos-funcional-etc-linguagens-de-programa-osistemas-sistemas-operacionais-redes-de-computadores-bancos-de-dados-intelig-ncia-artificial-machine-learning-processamento-de-linguagem-natural-vis-ocomputacional-computa-ogr-fica-eprocessamento-de-imagens">
+      <div
+        class="ciencia-da-computao-t-introdu-otocurso-de-ci-ncia-da-computa-ofoca-nos-fundamentos-te-ricos-ematem-ticos-da-computa-oaborda-aestrutura-de-dados-algoritmos-teoria-da-computabilidade-linguagens-de-programa-oarquitetura-de-computadores-sistemas-operacionais-eintelig-ncia-artificial-oobjetivo-formar-profissionais-capazes-de-entender-os-princ-pios-subjacentes-aqualquer-sistema-computacional-edesenvolver-solu-es-inovadoras-para-problemas-complexos-muitas-vezes-em-reas-de-pesquisa-edesenvolvimento-tprincipais-reas-de-estudo-tfundamentos-te-ricos-matem-tica-discreta-lgica-teoria-da-computa-oan-lise-de-algoritmos-programa-oestruturas-de-dados-paradigmas-de-programa-oorientada-aobjetos-funcional-etc-linguagens-de-programa-osistemas-sistemas-operacionais-redes-de-computadores-bancos-de-dados-intelig-ncia-artificial-machine-learning-processamento-de-linguagem-natural-vis-ocomputacional-computa-ogr-fica-eprocessamento-de-imagens">
+        <div class="ciencia-da-computao-introdu-o">Introdução:</div>
+        <div
+          class="ciencia-da-computao-to-curso-de-ci-ncia-da-computa-ofoca-nos-fundamentos-te-ricos-ematem-ticos-da-computa-oaborda-aestrutura-de-dados-algoritmos-teoria-da-computabilidade-linguagens-de-programa-oarquitetura-de-computadores-sistemas-operacionais-eintelig-ncia-artificial-oobjetivo-formar-profissionais-capazes-de-entender-os-princ-pios-subjacentes-aqualquer-sistema-computacional-edesenvolver-solu-es-inovadoras-para-problemas-complexos-muitas-vezes-em-reas-de-pesquisa-edesenvolvimento">
+          <div
+            class="ciencia-da-computao-o-curso-de-ci-ncia-da-computa-ofoca-nos-fundamentos-te-ricos-ematem-ticos-da-computa-oaborda-aestrutura-de-dados-algoritmos-teoria-da-computabilidade-linguagens-de-programa-oarquitetura-de-computadores-sistemas-operacionais-eintelig-ncia-artificial-oobjetivo-formar-profissionais-capazes-de-entender-os-princ-pios-subjacentes-aqualquer-sistema-computacional-edesenvolver-solu-es-inovadoras-para-problemas-complexos-muitas-vezes-em-reas-de-pesquisa-edesenvolvimento">
+            <p>
+              <span class="ciencia-da-computao-text">O </span>curso de
+              Ciência da Computação foca nos fundamentos teóricos e
+              matemáticos da computação. Aborda a estrutura de dados,
+              algoritmos, teoria da computabilidade, linguagens de
+              programação, arquitetura de computadores, sistemas
+              operacionais e inteligência artificial. O objetivo é formar
+              profissionais capazes de entender os princípios subjacentes a
+              qualquer sistema computacional e desenvolver soluções
+              inovadoras para problemas complexos, muitas vezes em áreas de
+              pesquisa e desenvolvimento.
+            </p>
+          </div>
+        </div>
+        <div class="ciencia-da-computao-t-principais-reas-de-estudo">
+          <div class="ciencia-da-computao-principais-reas-de-estudo">
+            <p>Principais Áreas de Estudo:</p>
+          </div>
+        </div>
+        <div
+          class="ciencia-da-computao-t-fundamentos-te-ricos-matem-tica-discreta-lgica-teoria-da-computa-oan-lise-de-algoritmos-programa-oestruturas-de-dados-paradigmas-de-programa-oorientada-aobjetos-funcional-etc-linguagens-de-programa-osistemas-sistemas-operacionais-redes-de-computadores-bancos-de-dados-intelig-ncia-artificial-machine-learning-processamento-de-linguagem-natural-vis-ocomputacional-computa-ogr-fica-eprocessamento-de-imagens">
+          <div
+            class="ciencia-da-computao-fundamentos-te-ricos-matem-tica-discreta-lgica-teoria-da-computa-oan-lise-de-algoritmos-programa-oestruturas-de-dados-paradigmas-de-programa-oorientada-aobjetos-funcional-etc-linguagens-de-programa-osistemas-sistemas-operacionais-redes-de-computadores-bancos-de-dados-intelig-ncia-artificial-machine-learning-processamento-de-linguagem-natural-vis-ocomputacional-computa-ogr-fica-eprocessamento-de-imagens">
+            
+              <ul class="ciencia-da-computao-list">
+                <li>
+                  Fundamentos Teóricos: Matemática Discreta, Lógica, Teoria
+                  da Computação, Análise de Algoritmos.
+                </li>
+                <li>
+                  Programação: Estruturas de Dados, Paradigmas de
+                  Programação (Orientada a Objetos, Funcional, etc.),
+                  Linguagens de Programação.
+                </li>
+                <li>
+                  Sistemas: Sistemas Operacionais, Redes de Computadores,
+                  Bancos de Dados.
+                </li>
+                <li>
+                  Inteligência Artificial: Machine Learning, Processamento
+                  de Linguagem Natural, Visão Computacional.
+                </li>
+                <li>Computação Gráfica e Processamento de Imagens.</li>
+              </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ciencia-da-computao-t-perfil">
+      <div class="ciencia-da-computao-perfil">Perfil:</div>
+    </div>
+    <div
+      class="ciencia-da-computao-o-cientista-da-computa-oum-pensador-anal-tico-eabstrato-com-forte-capacidade-de-resolver-problemas-edesenvolver-novas-abordagens-ideal-para-quem-busca-atuar-com-pesquisa-desenvolvimento-de-algoritmos-complexos-novas-tecnologias-intelig-ncia-artificial-eci-ncia-de-dados">
+      <p>
+        O cientista da computação é um pensador analítico e abstrato, com
+        forte capacidade de resolver problemas e desenvolver novas
+        abordagens. É ideal para quem busca atuar com pesquisa,
+        desenvolvimento de algoritmos complexos, novas tecnologias,
+        inteligência artificial e ciência de dados.
+      </p>
+    </div>
+    <div class="ciencia-da-computao-t-reas-de-atua-o">
+      <div class="ciencia-da-computao-reas-de-atua-o">
+        Áreas de Atuação:
+      </div>
+    </div>
+    <div
+      class="ciencia-da-computao-pesquisador-desenvolvedor-de-software-em-reas-de-pdanalista-de-sistemas-engenheiro-de-machine-learning-arquiteto-de-software-especialista-em-seguran-ada-informa-o">
+      <p>
+        Pesquisador, Desenvolvedor de Software (em áreas de P&amp;D),
+        Analista de Sistemas, Engenheiro de Machine Learning, Arquiteto de
+        Software, Especialista em Segurança da Informação.
+      </p>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>

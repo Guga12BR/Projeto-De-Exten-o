@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500">
+  <title>Sumario</title>
+  <style rel="stylesheet" crossorigin="">
+    @import url("https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;600");
+    @import url("https://api.fontshare.com/css?f[]=sarpanch@400,600&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto Condensed:wght@400;600");
+    @import url("https://api.fontshare.com/css?f[]=roboto condensed@400,600&display=swap");
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e5e7eb;
+    }
+
+    ::before,
+    ::after {
+      --tw-content: "";
+    }
+
+
+    html,
+    :host {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+      tab-size: 4;
+      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: transparent;
+      zoom: 90%;
+    }
+
+
+    body {
+      margin: 0;
+      line-height: inherit;
+    }
+
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px;
+    }
+
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+
+    code,
+    kbd,
+    samp,
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      font-size: 1em;
+    }
+
+
+    small {
+      font-size: 80%;
+    }
+
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse;
+    }
+
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      font-size: 100%;
+      font-weight: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+
+    button,
+    input:where([type="button"]),
+    input:where([type="reset"]),
+    input:where([type="submit"]) {
+      -webkit-appearance: button;
+      background-color: transparent;
+      background-image: none;
+    }
+
+
+    :-moz-focusring {
+      outline: auto;
+    }
+
+
+    :-moz-ui-invalid {
+      box-shadow: none;
+    }
+
+
+    progress {
+      vertical-align: baseline;
+    }
+
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+
+    [type="search"] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px;
+    }
+
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+
+
+    summary {
+      display: list-item;
+    }
+
+
+    blockquote,
+    dl,
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    figure,
+    p,
+    pre {
+      margin: 0;
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0;
+    }
+
+    legend {
+      padding: 0;
+    }
+
+    ol,
+    ul,
+    menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    dialog {
+      padding: 0;
+    }
+
+
+    textarea {
+      resize: vertical;
+    }
+
+
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 1;
+      color: #9ca3af;
+    }
+
+
+    button,
+    [role="button"] {
+      cursor: pointer;
+    }
+
+    :disabled {
+      cursor: default;
+    }
+
+
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+      display: block;
+      vertical-align: middle;
+    }
+
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+
+
+
+    p,
+    ol,
+    ul {
+      margin: 0px;
+    }
+
+    button {
+      padding: 0px;
+    }
+
+    ol,
+    ul {
+      padding-inline-start: 1.5em;
+    }
+
+    input {
+      background-image: none;
+      background-color: transparent;
+    }
+
+    .common-3,
+    .sumrio-rectangle,
+    .sumrio-t-ci-ncia-da-computa-o,
+    .sumrio-t-engenharia-da-computa-o {
+      display: flex;
+      justify-content: center;
+    }
+
+    .common-4,
+    .sumrio-t-pagina-inicial-sum-rio-tsobre,
+    .sumrio-cursos-citados-no-site {
+      display: flex;
+      align-items: center;
+    }
+
+    .common-2,
+    .sumrio-ci-ncia-da-computa-o,
+    .sumrio-engenharia-da-computa-o,
+    .sumrio-engenharia-de-software,
+    .sumrio-sistemas-de-informa-o,
+    .sumrio-ci-ncia-de-dados {
+      font-size: 64px;
+      font-family: "Roboto Condensed", ui-sans-serif, system-ui, sans-serif;
+      text-align: center;
+    }
+
+    .common-1,
+    .sumrio-wrapper,
+    .sumrio-sum-rio {
+      display: flex;
+      width: 100%;
+    }
+
+    .sumrio-wrapper {
+      align-items: flex-start;
+      line-height: normal;
+    }
+
+    .sumrio-sum-rio {
+      overflow: clip;
+      align-items: center;
+      background-color: dodgerblue;
+      flex-direction: column;
+      padding-bottom: 264px;
+      height: 100%;
+      position: relative;
+      font-weight: 600;
+      gap: 85px;
+    }
+
+    .sumrio-rectangle {
+      background-color: darkslateblue;
+      flex-direction: column;
+      align-self: stretch;
+      padding-bottom: 40px;
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 40px;
+    }
+
+    .sumrio-tt-pagina-inicial-sum-rio-tsobre {
+      align-items: flex-end;
+      padding-right: 199px;
+      padding-top: 12px;
+      display: flex;
+    }
+
+    .sumrio-t-pagina-inicial-sum-rio-tsobre {
+      row-gap: 35px;
+      column-gap: 48px;
+      flex-grow: 1;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      font-size: 50px;
+      color: white;
+    }
+
+    .sumrio-sobre {
+      padding-left: 115px;
+    }
+
+    .sumrio-cursos-citados-no-site {
+      width: 1448px;
+      height: 168px;
+      z-index: 0;
+      right: 0px;
+      top: 328px;
+      position: absolute;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      font-size: 120px;
+    }
+
+    .sumrio-t-ci-ncia-da-computa-o {
+      align-items: flex-end;
+      align-self: stretch;
+      padding-top: 415px;
+      z-index: 3;
+    }
+
+    .sumrio-ci-ncia-da-computa-o {
+      font-style: italic;
+      text-decoration: underline;
+    }
+
+    .sumrio-t-engenharia-da-computa-o {
+      align-items: center;
+      align-self: stretch;
+    }
+
+    .sumrio-engenharia-da-computa-o {
+      font-style: italic;
+      text-decoration: underline;
+    }
+
+    .sumrio-engenharia-de-software {
+      font-style: italic;
+      text-decoration: underline;
+    }
+
+    .sumrio-sistemas-de-informa-o {
+      font-style: italic;
+      text-decoration: underline;
+    }
+
+    .sumrio-ci-ncia-de-dados {
+      font-style: italic;
+      text-decoration: underline;
+    }
+
+    @media (min-width: 1500px) {
+      .sumrio-t-pagina-inicial-sum-rio-tsobre {
+        flex-wrap: nowrap;
+      }
+    }
+  </style>
+  <style>
+    html {
+      scrollbar-gutter: stable;
+    }
+  </style>
+</head>
+
+<body style="margin: 0px">
+    <div class="sumrio-wrapper">
+      <div class="sumrio-sum-rio">
+        <div class="sumrio-rectangle">
+          <div class="sumrio-tt-pagina-inicial-sum-rio-tsobre">
+            <div class="sumrio-t-pagina-inicial-sum-rio-tsobre">
+              <div><a href="./main.html">Pagina Inicial</a></div>
+              <div><a href="./sumario.html">Sumário</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="sumrio-cursos-citados-no-site">
+          Cursos Citados no site:
+        </div>
+        <div class="sumrio-t-ci-ncia-da-computa-o">
+          <div class="sumrio-ci-ncia-da-computa-o"><a href="./Cursos/ciencia_da_computacao.html">Ciência da Computação</a></div>
+        </div>
+        <div class="sumrio-t-engenharia-da-computa-o">
+          <div class="sumrio-engenharia-da-computa-o">
+            <a href="./Cursos/engenharia_da_computacao.html">Engenharia da Computação</a>
+          </div>
+        </div>
+        <div class="sumrio-engenharia-de-software">
+          <a href="./Cursos/engenharia_de_software.html">Engenharia de Software</a>
+        </div>
+        <div class="sumrio-sistemas-de-informa-o"><a href="./Cursos/sistema_da_informacao.html">Sistemas de Informação</a></div>
+        <div class="sumrio-ci-ncia-de-dados"><a href="./Cursos/ciencia_de_dados.html">Ciência de Dados</a></div>
+      </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

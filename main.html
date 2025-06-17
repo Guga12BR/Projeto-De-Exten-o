@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500">
+    <title>Pagina Inicial</title>
+    <style rel="stylesheet" crossorigin="">
+        @import url("https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;600");
+        @import url("https://api.fontshare.com/css?f[]=sarpanch@400,600&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700");
+        @import url("https://api.fontshare.com/css?f[]=roboto@400,500,700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Roboto Condensed:wght@400;500;600");
+        @import url("https://api.fontshare.com/css?f[]=roboto condensed@400,500,600&display=swap");
+
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            /* 1 */
+            border-width: 0;
+            /* 2 */
+            border-style: solid;
+            /* 2 */
+            border-color: #e5e7eb;
+            /* 2 */
+        }
+
+        ::before,
+        ::after {
+            --tw-content: "";
+        }
+
+
+
+        html,
+        :host {
+            line-height: 1.5;
+            /* 1 */
+            -webkit-text-size-adjust: 100%;
+            /* 2 */
+            /* 3 */
+            tab-size: 4;
+            /* 3 */
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            /* 4 */
+            font-feature-settings: normal;
+            /* 5 */
+            font-variation-settings: normal;
+            /* 6 */
+            -webkit-tap-highlight-color: transparent;
+            /* 7 */
+            zoom: 50%;
+        }
+
+
+
+        body {
+            margin: 0;
+            /* 1 */
+            line-height: inherit;
+            /* 2 */
+        }
+
+
+
+        hr {
+            height: 0;
+            /* 1 */
+            color: inherit;
+            /* 2 */
+            border-top-width: 1px;
+            /* 3 */
+        }
+
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+
+
+        b,
+        strong {
+            font-weight: bolder;
+        }
+
+
+
+        code,
+        kbd,
+        samp,
+        pre {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            /* 1 */
+            font-feature-settings: normal;
+            /* 2 */
+            font-variation-settings: normal;
+            /* 3 */
+            font-size: 1em;
+            /* 4 */
+        }
+
+
+        small {
+            font-size: 80%;
+        }
+
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+
+        table {
+            text-indent: 0;
+            /* 1 */
+            border-color: inherit;
+            /* 2 */
+            border-collapse: collapse;
+            /* 3 */
+        }
+
+
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            /* 1 */
+            font-feature-settings: inherit;
+            /* 1 */
+            font-variation-settings: inherit;
+            /* 1 */
+            font-size: 100%;
+            /* 1 */
+            font-weight: inherit;
+            /* 1 */
+            line-height: inherit;
+            /* 1 */
+            letter-spacing: inherit;
+            /* 1 */
+            color: inherit;
+            /* 1 */
+            margin: 0;
+            /* 2 */
+            padding: 0;
+            /* 3 */
+        }
+
+
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+
+
+        button,
+        input:where([type="button"]),
+        input:where([type="reset"]),
+        input:where([type="submit"]) {
+            -webkit-appearance: button;
+            /* 1 */
+            background-color: transparent;
+            /* 2 */
+            background-image: none;
+            /* 2 */
+        }
+
+        :-moz-focusring {
+            outline: auto;
+        }
+
+
+
+        :-moz-ui-invalid {
+            box-shadow: none;
+        }
+
+
+        progress {
+            vertical-align: baseline;
+        }
+
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto;
+        }
+
+
+        [type="search"] {
+            -webkit-appearance: textfield;
+            /* 1 */
+            outline-offset: -2px;
+            /* 2 */
+        }
+
+
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            /* 1 */
+            font: inherit;
+            /* 2 */
+        }
+
+
+
+        summary {
+            display: list-item;
+        }
+
+
+
+        blockquote,
+        dl,
+        dd,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        figure,
+        p,
+        pre {
+            margin: 0;
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0;
+        }
+
+        legend {
+            padding: 0;
+        }
+
+        ol,
+        ul,
+        menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        dialog {
+            padding: 0;
+        }
+
+
+        textarea {
+            resize: vertical;
+        }
+
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            /* 1 */
+            color: #9ca3af;
+            /* 2 */
+        }
+
+
+
+        button,
+        [role="button"] {
+            cursor: pointer;
+        }
+
+        :disabled {
+            cursor: default;
+        }
+
+
+
+        img,
+        svg,
+        video,
+        canvas,
+        audio,
+        iframe,
+        embed,
+        object {
+            display: block;
+            /* 1 */
+            vertical-align: middle;
+            /* 2 */
+        }
+
+
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        [hidden] {
+            display: none;
+        }
+
+
+
+
+
+
+        p,
+        ol,
+        ul {
+            margin: 0px;
+        }
+
+        button {
+            padding: 0px;
+        }
+
+        ol,
+        ul {
+            padding-inline-start: 1.5em;
+        }
+
+        input {
+            background-image: none;
+            background-color: transparent;
+        }
+
+        .common-1,
+        .pagina-principal-rectangle,
+        .pagina-principal-t-pagina-inicial-sum-rio-tsobre {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .common-2,
+        .pagina-principal-pagina-principal,
+        .pagina-principal-tt-introducaotexto {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .common-3,
+        .pagina-principal-tt-pagina-inicial-sum-rio-tsobre,
+        .pagina-principal-t-cursoscomp {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .common-4,
+        .pagina-principal-introducaotexto,
+        .pagina-principal-cursos-comp-p {
+            display: flex;
+            align-items: center;
+        }
+
+        .pagina-principal-pagina-principal {
+            align-items: flex-start;
+            background-color: dodgerblue;
+            padding-bottom: 173px;
+            padding-left: 38px;
+            padding-right: 83px;
+            padding-top: 242px;
+            position: relative;
+            width: 100%;
+            font-size: 50px;
+            line-height: normal;
+            gap: 80px;
+        }
+
+        .pagina-principal-rectangle {
+            background-color: darkslateblue;
+            flex-direction: column;
+            height: 162px;
+            padding-bottom: 40px;
+            padding-left: 38px;
+            padding-right: 38px;
+            padding-top: 40px;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            position: absolute;
+        }
+
+        .pagina-principal-tt-pagina-inicial-sum-rio-tsobre {
+            padding-right: 199px;
+            padding-top: 12px;
+        }
+
+        .pagina-principal-t-pagina-inicial-sum-rio-tsobre {
+            row-gap: 35px;
+            column-gap: 215px;
+            flex-wrap: wrap;
+            font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+            color: white;
+        }
+
+        .pagina-principal-sobre {
+            padding-left: 115px;
+        }
+
+        .pagina-principal-introducao {
+            width: 860px;
+            font-family: Roboto, ui-sans-serif, system-ui, sans-serif;
+            font-size: 120px;
+            font-weight: 700;
+        }
+
+        .pagina-principal-tt-introducaotexto {
+            align-self: stretch;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 55px;
+            justify-content: flex-end;
+        }
+
+        .pagina-principal-introducaotexto {
+            font-family: Roboto, ui-sans-serif, system-ui, sans-serif;
+            font-weight: 500;
+            padding-right: 78px;
+        }
+
+        .pagina-principal-t-cursoscomp {
+            align-self: stretch;
+            padding-top: 13px;
+        }
+
+        .pagina-principal-cursos-comp {
+            flex-grow: 1;
+            font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+            font-size: 64px;
+            font-weight: 600;
+        }
+
+        .pagina-principal-cursos-comp-p {
+            font-family: "Roboto Condensed", ui-sans-serif, system-ui, sans-serif;
+            font-weight: 500;
+            margin-left: 15px;
+            align-self: stretch;
+            height: 885px;
+        }
+
+        .pagina-principal-text {
+            font-size: 96px;
+        }
+
+        .pagina-principal-text-1 {
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .pagina-principal-text-2 {
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .pagina-principal-text-3 {
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .pagina-principal-text-4 {
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .pagina-principal-text-5 {
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .pagina-principal-text-6 {
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .pagina-principal-text-7 {
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .pagina-principal-text-8 {
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .pagina-principal-text-9 {
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .pagina-principal-text-10 {
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        @media (min-width: 1500px) {
+            .pagina-principal-t-pagina-inicial-sum-rio-tsobre {
+                flex-wrap: nowrap;
+            }
+        }
+    </style>
+    <style>
+        html {
+            scrollbar-gutter: stable;
+        }
+    </style>
+</head>
+
+<body style="margin: 0px">
+
+
+    <div class="pagina-principal-pagina-principal">
+        <div class="pagina-principal-rectangle">
+            <div class="pagina-principal-tt-pagina-inicial-sum-rio-tsobre">
+                <div class="pagina-principal-t-pagina-inicial-sum-rio-tsobre">
+                    <div><a href="./main.html">Pagina Inicial</a></div>
+                    <div><a href="./sumario.html">Sumário</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="pagina-principal-introducao">Introdução:</div>
+        <div class="pagina-principal-tt-introducaotexto">
+            <div class="pagina-principal-introducaotexto">
+                <p>
+                    Este site irá explicar sobre cada curso da área da computação,
+                    buscando mostrar a diferança entre elas.
+                </p>
+            </div>
+        </div>
+        <div class="pagina-principal-t-cursoscomp">
+            <div class="pagina-principal-cursos-comp">
+                Os Cursos da Àreas da Computação:
+            </div>
+        </div>
+        <div class="pagina-principal-cursos-comp-p">
+            <p>
+                <span class="pagina-principal-text">A </span>área da computação
+                abrange um vasto leque de especializações, cada uma com foco
+                distinto no desenvolvimento e aplicação de sistemas computacionais.
+                Os cursos de
+                <a href="./Cursos/ciencia_da_computacao.html"><span class="pagina-principal-text-1">Ciência da Computação</span></a>,
+                <a href="./Cursos/engenharia_da_computacao.html"><span class="pagina-principal-text-2">Engenharia da Computação</span></a>,
+                <a href="./Cursos/engenharia_de_software.html"><span class="pagina-principal-text-3">Engenharia de Software</span></a>,
+                <a href="./Cursos/sistema_da_informacao.html"><span class="pagina-principal-text-4">Sistemas de Informação</span></a> e 
+                <a href="./Cursos/ciencia_de_dados.html"><span class="pagina-principal-text-5">Ciência de Dados</span></a>,
+                embora interligados, preparam profissionais com perfis e habilidades
+                complementares para atuar em diferentes áreas do mercado. Enquanto
+                alguns se aprofundam na teoria e nos fundamentos dos algoritmos e da
+                computação <a href="./Cursos/ciencia_da_computacao.html">(<span class="pagina-principal-text-6">Ciência da Computação</span>)</a>, outros se dedicam à
+                integração de hardware e software <a href="./Cursos/engenharia_da_computacao.html">(<span class="pagina-principal-text-7">Engenharia da
+                    Computação</span>)</a>, ao desenvolvimento de sistemas robustos e eficientes <a href="./Cursos/engenharia_de_software.html">(<span
+                    class="pagina-principal-text-8">Engenharia de Software</span>)</a>, à gestão da tecnologia para o
+                suporte a processos
+                organizacionais <a href="./Cursos/sistema_da_informacao.html">(<span class="pagina-principal-text-9">Sistemas de Informação</span>)</a> ou à extração
+                de conhecimento e valor de grandes volumes de dados
+                <a href="./Cursos/ciencia_de_dados.html">(<span class="pagina-principal-text-10">Ciência de Dados</span>)</a>. A
+                escolha ideal depende dos interesses e aspirações profissionais de
+                cada indivíduo.
+            </p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

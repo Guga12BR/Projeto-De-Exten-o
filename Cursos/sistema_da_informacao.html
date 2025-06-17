@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500">
+  <title>Engenharia de Software</title>
+  <style rel="stylesheet" crossorigin="">
+    @import url("https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;600;700");
+    @import url("https://api.fontshare.com/css?f[]=sarpanch@400,600,700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto Condensed:wght@400;500");
+    @import url("https://api.fontshare.com/css?f[]=roboto condensed@400,500&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto Serif:wght@400;500");
+    @import url("https://api.fontshare.com/css?f[]=roboto serif@400,500&display=swap");
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e5e7eb;
+    }
+
+    ::before,
+    ::after {
+      --tw-content: "";
+    }
+
+
+    html,
+    :host {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+      tab-size: 4;
+      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: transparent;
+      zoom: 95%;
+    }
+
+
+    body {
+      margin: 0;
+      line-height: inherit;
+    }
+
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px;
+    }
+
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+
+    code,
+    kbd,
+    samp,
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      font-size: 1em;
+    }
+
+
+    small {
+      font-size: 80%;
+    }
+
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse;
+    }
+
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      font-size: 100%;
+      font-weight: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+
+    button,
+    input:where([type="button"]),
+    input:where([type="reset"]),
+    input:where([type="submit"]) {
+      -webkit-appearance: button;
+      background-color: transparent;
+      background-image: none;
+    }
+
+
+    :-moz-focusring {
+      outline: auto;
+    }
+
+
+    :-moz-ui-invalid {
+      box-shadow: none;
+    }
+
+
+    progress {
+      vertical-align: baseline;
+    }
+
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+
+    [type="search"] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px;
+    }
+
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+
+
+    summary {
+      display: list-item;
+    }
+
+
+    blockquote,
+    dl,
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    figure,
+    p,
+    pre {
+      margin: 0;
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0;
+    }
+
+    legend {
+      padding: 0;
+    }
+
+    ol,
+    ul,
+    menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    dialog {
+      padding: 0;
+    }
+
+
+    textarea {
+      resize: vertical;
+    }
+
+
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 1;
+      color: #9ca3af;
+    }
+
+
+    button,
+    [role="button"] {
+      cursor: pointer;
+    }
+
+    :disabled {
+      cursor: default;
+    }
+
+
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+      display: block;
+      vertical-align: middle;
+    }
+
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+
+
+
+
+
+    p,
+    ol,
+    ul {
+      margin: 0px;
+    }
+
+    button {
+      padding: 0px;
+    }
+
+    ol,
+    ul {
+      padding-inline-start: 1.5em;
+    }
+
+    input {
+      background-image: none;
+      background-color: transparent;
+    }
+
+    .common-4,
+    .sistemas-de-informao-tt-rectangle-1tsistemas-de-informa-otttttintrodu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa-tprincipais-reas-de-estudo-ttecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti-tperfil-toprofissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-otreas-de-atua-otanalista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas,
+    .sistemas-de-informao-rectangle,
+    .sistemas-de-informao-ttt-introdu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa-tprincipais-reas-de-estudo-ttecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti-tperfil-toprofissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-otreas-de-atua-otanalista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .common-5,
+    .sistemas-de-informao-tttt-introdu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa-tprincipais-reas-de-estudo-ttecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti-tperfil-toprofissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-otreas-de-atua-otanalista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas,
+    .sistemas-de-informao-tt-introdu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa {
+      display: flex;
+      justify-content: center;
+    }
+
+    .common-6,
+    .sistemas-de-informao-tt-pagina-inicial-sum-rio-tsobre,
+    .sistemas-de-informao-t-perfil,
+    .sistemas-de-informao-t-reas-de-atua-o {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .common-7,
+    .sistemas-de-informao-t-pagina-inicial-sum-rio-tsobre,
+    .sistemas-de-informao-o-curso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa,
+    .sistemas-de-informao-tecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti,
+    .sistemas-de-informao-o-profissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-o,
+    .sistemas-de-informao-analista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas {
+      display: flex;
+      align-items: center;
+    }
+
+    .common-2,
+    .sistemas-de-informao-principais-reas-de-estudo,
+    .sistemas-de-informao-perfil,
+    .sistemas-de-informao-reas-de-atua-o {
+      font-size: 64px;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      font-weight: 600;
+    }
+
+    .common-3,
+    .sistemas-de-informao-sistemas-de-informa-o1,
+    .sistemas-de-informao-introdu-o {
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      font-weight: 700;
+    }
+
+    .common-1,
+    .sistemas-de-informao-wrapper,
+    .sistemas-de-informao-sistemas-de-informa-o {
+      display: flex;
+      width: 100%;
+    }
+
+    .sistemas-de-informao-wrapper {
+      align-items: flex-start;
+      line-height: normal;
+    }
+
+    .sistemas-de-informao-sistemas-de-informa-o {
+      overflow: clip;
+      align-items: center;
+      background-color: dodgerblue;
+      flex-direction: column;
+      padding-bottom: 195px;
+      height: 100%;
+    }
+
+    .sistemas-de-informao-tt-rectangle-1tsistemas-de-informa-otttttintrodu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa-tprincipais-reas-de-estudo-ttecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti-tperfil-toprofissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-otreas-de-atua-otanalista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas {
+      width: 1563px;
+      flex-grow: 1;
+      font-size: 50px;
+      gap: 36px;
+    }
+
+    .sistemas-de-informao-rectangle {
+      justify-content: center;
+      background-color: darkslateblue;
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin-left: 26px;
+      margin-right: 26px;
+    }
+
+    .sistemas-de-informao-tt-pagina-inicial-sum-rio-tsobre {
+      padding-right: 199px;
+      padding-top: 12px;
+    }
+
+    .sistemas-de-informao-t-pagina-inicial-sum-rio-tsobre {
+      row-gap: 35px;
+      column-gap: 48px;
+      flex-grow: 1;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-family: Sarpanch, ui-sans-serif, system-ui, sans-serif;
+      color: white;
+    }
+
+    .sistemas-de-informao-sobre {
+      padding-left: 115px;
+    }
+
+    .sistemas-de-informao-sistemas-de-informa-o1 {
+      font-size: 117px;
+      text-align: center;
+      padding-top: 64px;
+    }
+
+    .sistemas-de-informao-tttt-introdu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa-tprincipais-reas-de-estudo-ttecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti-tperfil-toprofissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-otreas-de-atua-otanalista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas {
+      padding-left: 50px;
+      padding-right: 93px;
+      flex-grow: 1;
+    }
+
+    .sistemas-de-informao-ttt-introdu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa-tprincipais-reas-de-estudo-ttecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti-tperfil-toprofissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-otreas-de-atua-otanalista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas {
+      flex-grow: 1;
+      font-family: "Roboto Condensed", ui-sans-serif, system-ui, sans-serif;
+      font-weight: 500;
+    }
+
+    .sistemas-de-informao-tt-introdu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa {
+      align-items: center;
+      padding-left: 15px;
+    }
+
+    .sistemas-de-informao-t-introdu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa {
+      flex-grow: 1;
+    }
+
+    .sistemas-de-informao-introdu-o {
+      width: 860px;
+      font-size: 120px;
+    }
+
+    .sistemas-de-informao-to-curso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa {
+      height: 548px;
+    }
+
+    .sistemas-de-informao-o-curso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa {
+      margin-bottom: -42px;
+      height: 590px;
+    }
+
+    .sistemas-de-informao-text {
+      font-size: 96px;
+    }
+
+    .sistemas-de-informao-t-principais-reas-de-estudo {
+      padding-left: 15px;
+      padding-top: 134px;
+    }
+
+    .sistemas-de-informao-t-tecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti {
+      height: 538px;
+      padding-left: 1420px;
+      padding-top: 538px;
+      position: relative;
+      display: flex;
+    }
+
+    .sistemas-de-informao-tecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti {
+      height: 563px;
+      left: 0px;
+      right: 15px;
+      top: -25px;
+      position: absolute;
+    }
+
+    .sistemas-de-informao-spacer {
+      height: 60px;
+    }
+
+    .sistemas-de-informao-list {
+      list-style-type: disc;
+    }
+
+    .sistemas-de-informao-t-perfil {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 145px;
+    }
+
+    .sistemas-de-informao-to-profissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-o {
+      padding-left: 15px;
+      padding-top: 32px;
+    }
+
+    .sistemas-de-informao-o-profissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-o {
+      height: 364px;
+    }
+
+    .sistemas-de-informao-t-reas-de-atua-o {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 32px;
+    }
+
+    .sistemas-de-informao-t-analista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas {
+      padding-left: 15px;
+      padding-top: 18px;
+    }
+
+    .sistemas-de-informao-analista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas {
+      font-family: "Roboto Serif", ui-sans-serif, system-ui, sans-serif;
+    }
+
+    @media (min-width: 1500px) {
+      .sistemas-de-informao-t-pagina-inicial-sum-rio-tsobre {
+        flex-wrap: nowrap;
+      }
+    }
+  </style>
+  <style>
+    html {
+      scrollbar-gutter: stable;
+    }
+  </style>
+</head>
+
+<body style="margin: 0px">
+
+  <div class="sistemas-de-informao-wrapper">
+    <div class="sistemas-de-informao-sistemas-de-informa-o">
+      <div
+        class="sistemas-de-informao-tt-rectangle-1tsistemas-de-informa-otttttintrodu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa-tprincipais-reas-de-estudo-ttecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti-tperfil-toprofissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-otreas-de-atua-otanalista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas">
+        <div class="sistemas-de-informao-rectangle">
+          <div class="sistemas-de-informao-tt-pagina-inicial-sum-rio-tsobre">
+            <div class="sistemas-de-informao-t-pagina-inicial-sum-rio-tsobre">
+              <div><a href="../main.html">Pagina Inicial</a></div>
+              <div><a href="../sumario.html">Sumário</a></div>
+
+            </div>
+          </div>
+        </div>
+        <div class="sistemas-de-informao-sistemas-de-informa-o1">
+          Sistemas de Informação
+        </div>
+        <div
+          class="sistemas-de-informao-tttt-introdu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa-tprincipais-reas-de-estudo-ttecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti-tperfil-toprofissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-otreas-de-atua-otanalista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas">
+          <div
+            class="sistemas-de-informao-ttt-introdu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa-tprincipais-reas-de-estudo-ttecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti-tperfil-toprofissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-otreas-de-atua-otanalista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas">
+            <div
+              class="sistemas-de-informao-tt-introdu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa">
+              <div
+                class="sistemas-de-informao-t-introdu-otocurso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa">
+                <div class="sistemas-de-informao-introdu-o">
+                  Introdução:
+                </div>
+                <div
+                  class="sistemas-de-informao-to-curso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa">
+                  <div
+                    class="sistemas-de-informao-o-curso-de-sistemas-de-informa-otem-um-car-ter-multidisciplinar-combinando-conhecimentos-de-tecnologia-da-informa-ocom-gest-oeneg-cios-ofoco-no-planejamento-desenvolvimento-implementa-oegerenciamento-de-sistemas-de-informa-oque-apoiam-os-processos-de-neg-cio-de-uma-organiza-ooprofissional-de-sistemas-de-informa-oatua-como-uma-ponte-entre-atecnologia-eas-necessidades-estrat-gicas-de-uma-empresa">
+                    <p>
+                      <span class="sistemas-de-informao-text">O </span>curso
+                      de Sistemas de Informação tem um caráter
+                      multidisciplinar, combinando conhecimentos de
+                      tecnologia da informação com gestão e negócios. O foco
+                      é no planejamento, desenvolvimento, implementação e
+                      gerenciamento de sistemas de informação que apoiam os
+                      processos de negócio de uma organização. O
+                      profissional de Sistemas de Informação atua como uma
+                      ponte entre a tecnologia e as necessidades
+                      estratégicas de uma empresa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sistemas-de-informao-t-principais-reas-de-estudo">
+              <div class="sistemas-de-informao-principais-reas-de-estudo">
+                Principais Áreas de Estudo:
+              </div>
+            </div>
+            <div
+              class="sistemas-de-informao-t-tecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti">
+              <div
+                class="sistemas-de-informao-tecnologia-da-informa-obancos-de-dados-redes-de-computadores-desenvolvimento-de-software-nfase-em-sistemas-de-informa-ogest-oeneg-cios-administra-ocontabilidade-marketing-finan-as-gest-ode-projetos-an-lise-de-neg-cios-levantamento-de-requisitos-modelagem-de-processos-de-neg-cio-seguran-ada-informa-ogovernan-ade-ti">
+                <span>
+                  <div class="sistemas-de-informao-spacer"></div>
+                  <ul class="sistemas-de-informao-list">
+                    <li>
+                      Tecnologia da Informação: Bancos de Dados, Redes de
+                      Computadores, Desenvolvimento de Software (ênfase em
+                      sistemas de informação).
+                    </li>
+                    <li>
+                      Gestão e Negócios: Administração, Contabilidade,
+                      Marketing, Finanças, Gestão de Projetos.
+                    </li>
+                    <li>
+                      Análise de Negócios: Levantamento de Requisitos,
+                      Modelagem de Processos de Negócio.
+                    </li>
+                    <li>Segurança da Informação.</li>
+                    <li>Governança de TI.</li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+            <div class="sistemas-de-informao-t-perfil">
+              <div class="sistemas-de-informao-perfil">Perfil:</div>
+            </div>
+            <div
+              class="sistemas-de-informao-to-profissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-o">
+              <div
+                class="sistemas-de-informao-o-profissional-de-sistemas-de-informa-oum-estrategista-com-habilidades-em-tecnologia-egest-ocapaz-de-entender-as-necessidades-de-neg-cio-traduzi-las-em-requisitos-de-sistemas-egerenciar-aimplementa-ode-solu-es-tecnol-gicas-que-agreguem-valor-organiza-o">
+                <p>
+                  O profissional de Sistemas de Informação é um estrategista
+                  com habilidades em tecnologia e gestão. É capaz de
+                  entender as necessidades de negócio, traduzi-las em
+                  requisitos de sistemas e gerenciar a implementação de
+                  soluções tecnológicas que agreguem valor à organização.
+                </p>
+              </div>
+            </div>
+            <div class="sistemas-de-informao-t-reas-de-atua-o">
+              <div class="sistemas-de-informao-reas-de-atua-o">
+                Áreas de Atuação:
+              </div>
+            </div>
+            <div
+              class="sistemas-de-informao-t-analista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas">
+              <div
+                class="sistemas-de-informao-analista-de-sistemas-gerente-de-projetos-de-ti-consultor-de-ti-analista-de-neg-cios-administrador-de-bancos-de-dados-gestor-de-ti-auditor-de-sistemas">
+                <p>
+                  Analista de Sistemas, Gerente de Projetos de TI, Consultor
+                  de TI, Analista de Negócios, Administrador de Bancos de
+                  Dados, Gestor de TI, Auditor de Sistemas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>
